@@ -1,0 +1,928 @@
+/**
+ * Environmental Item Exchange - Frontend Styles
+ * 
+ * Styles for the user-facing interface
+ */
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+.ep-exchange-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ep-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.ep-btn-primary {
+    background-color: #2e7d32;
+    color: #fff;
+    border-color: #2e7d32;
+}
+
+.ep-btn-primary:hover {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+    color: #fff;
+}
+
+.ep-btn-secondary {
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
+
+.ep-btn-secondary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.ep-btn-outline {
+    background-color: transparent;
+    color: #2e7d32;
+    border-color: #2e7d32;
+}
+
+.ep-btn-outline:hover {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+.ep-btn:disabled,
+.ep-btn.ep-loading {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   Search & Filters
+   ========================================================================== */
+
+.ep-search-filters {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #e9ecef;
+}
+
+.ep-search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.ep-search-box input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.ep-search-box input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.ep-filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    align-items: end;
+}
+
+.ep-filters select,
+.ep-filters input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.ep-filters select:focus,
+.ep-filters input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+/* ==========================================================================
+   Exchange List & Cards
+   ========================================================================== */
+
+.ep-exchange-list {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ep-layout-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.ep-layout-list {
+    grid-template-columns: 1fr;
+}
+
+.ep-exchange-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ep-exchange-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.ep-exchange-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.ep-exchange-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ep-no-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.ep-exchange-content {
+    padding: 20px;
+}
+
+.ep-exchange-title {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ep-exchange-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.ep-exchange-title a:hover {
+    color: #2e7d32;
+}
+
+.ep-exchange-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.ep-exchange-type {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ep-type-give_away {
+    background-color: #4caf50;
+}
+
+.ep-type-exchange {
+    background-color: #ff9800;
+}
+
+.ep-type-lending {
+    background-color: #2196f3;
+}
+
+.ep-type-request {
+    background-color: #9c27b0;
+}
+
+.ep-exchange-condition,
+.ep-exchange-location {
+    font-size: 12px;
+    color: #6c757d;
+    background: #f8f9fa;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.ep-exchange-excerpt {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.ep-exchange-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ep-exchange-actions .ep-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+.ep-save-exchange.saved {
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
+
+/* ==========================================================================
+   Load More
+   ========================================================================== */
+
+.ep-load-more-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ep-no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6c757d;
+    font-size: 16px;
+}
+
+/* ==========================================================================
+   User Dashboard
+   ========================================================================== */
+
+.ep-user-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ep-dashboard-header {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.ep-dashboard-header h2 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.ep-user-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.ep-stat-card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.ep-stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.ep-stat-label {
+    font-size: 12px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ep-dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.ep-dashboard-section {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.ep-dashboard-section h3 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+}
+
+.ep-recent-activity,
+.ep-pending-matches {
+    min-height: 100px;
+}
+
+.ep-activity-placeholder,
+.ep-matches-placeholder {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 20px;
+}
+
+.ep-environmental-impact {
+    text-align: center;
+}
+
+.ep-impact-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.ep-impact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ep-impact-number {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4caf50;
+}
+
+.ep-impact-unit {
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.ep-impact-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6c757d;
+}
+
+.ep-dashboard-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Exchange Form
+   ========================================================================== */
+
+.ep-exchange-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ep-form-section {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.ep-form-section h3 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+}
+
+.ep-form-group {
+    margin-bottom: 20px;
+}
+
+.ep-form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.ep-form-input,
+.ep-form-textarea,
+.ep-form-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.ep-form-input:focus,
+.ep-form-textarea:focus,
+.ep-form-select:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.ep-form-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.ep-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.ep-form-checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ep-form-checkbox {
+    width: auto;
+}
+
+.ep-image-upload {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ep-image-upload:hover {
+    border-color: #4caf50;
+    background-color: #f8fff8;
+}
+
+.ep-image-upload input {
+    display: none;
+}
+
+.ep-image-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.ep-image-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ep-image-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.ep-remove-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255,0,0,0.8);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.ep-field-error {
+    border-color: #dc3545 !important;
+}
+
+.ep-field-error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   Match Finder
+   ========================================================================== */
+
+.ep-match-finder {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ep-match-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ep-match-header h2 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.ep-match-results {
+    display: grid;
+    gap: 20px;
+}
+
+.ep-match-item {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+}
+
+.ep-match-score {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #4caf50;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ep-match-content {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 15px;
+    align-items: start;
+}
+
+.ep-match-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.ep-match-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ep-match-details h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.ep-match-details p {
+    margin: 0 0 10px 0;
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.ep-match-meta {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.ep-match-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ep-match-actions .ep-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+    white-space: nowrap;
+}
+
+.ep-compatibility-factors {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f8f9fa;
+}
+
+.ep-compatibility-factors h5 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.ep-factors-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.ep-factor-tag {
+    background: #f8f9fa;
+    color: #6c757d;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+}
+
+.ep-factor-tag.positive {
+    background: #d4edda;
+    color: #155724;
+}
+
+/* ==========================================================================
+   Modals
+   ========================================================================== */
+
+.ep-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.ep-modal.show {
+    display: flex;
+}
+
+.ep-modal-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.ep-modal-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.ep-modal-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.ep-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6c757d;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ep-modal-close:hover {
+    color: #333;
+}
+
+.ep-modal-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+    text-align: right;
+}
+
+/* ==========================================================================
+   Star Rating
+   ========================================================================== */
+
+.ep-star-rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.ep-star {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.ep-star:hover,
+.ep-star.active {
+    color: #ffc107;
+}
+
+.ep-star-rating.readonly .ep-star {
+    cursor: default;
+}
+
+/* ==========================================================================
+   Notifications
+   ========================================================================== */
+
+.ep-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateX(350px);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+}
+
+.ep-notification.show {
+    transform: translateX(0);
+}
+
+.ep-notification-success {
+    border-left: 4px solid #4caf50;
+}
+
+.ep-notification-error {
+    border-left: 4px solid #dc3545;
+}
+
+.ep-notification-warning {
+    border-left: 4px solid #ff9800;
+}
+
+.ep-notification-info {
+    border-left: 4px solid #2196f3;
+}
+
+/* ==========================================================================
+   Login Required
+   ========================================================================== */
+
+.ep-login-required {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    color: #6c757d;
+}
+
+.ep-login-required a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.ep-login-required a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   Loading States
+   ========================================================================== */
+
+.ep-loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.ep-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #4caf50;
+    border-radius: 50%;
+    animation: ep-spin 1s linear infinite;
+}
+
+@keyframes ep-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .ep-search-box {
+        flex-direction: column;
+    }
+    
+    .ep-filters {
+        grid-template-columns: 1fr;
+    }
+    
+    .ep-exchange-list.ep-layout-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ep-user-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ep-dashboard-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .ep-form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .ep-match-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .ep-modal-content {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .ep-dashboard-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .ep-exchange-list-container,
+    .ep-user-dashboard,
+    .ep-exchange-form-container,
+    .ep-match-finder {
+        padding: 10px;
+    }
+    
+    .ep-user-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .ep-exchange-actions {
+        flex-direction: column;
+    }
+    
+    .ep-exchange-actions .ep-btn {
+        text-align: center;
+    }
+}
