@@ -1,0 +1,38 @@
+[03-Jun-2025 20:10:41 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6334
+[04-Jun-2025 05:12:09 UTC] Automatic updates starting...
+[04-Jun-2025 05:12:10 UTC]   Automatic plugin updates starting...
+[04-Jun-2025 05:12:10 UTC]   Automatic plugin updates complete.
+[04-Jun-2025 05:12:11 UTC] Automatic updates complete.
+[04-Jun-2025 05:44:44 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 06:09:53 UTC] WordPress database error Unknown column 'id' in 'order clause' for query SELECT * FROM forums ORDER BY id ASC made by EP_Forum_Migration->run_migration, EP_Forum_Migration->migrate_forums
+[04-Jun-2025 06:09:53 UTC] WordPress database error Unknown column 'id' in 'order clause' for query SELECT * FROM forum_topics ORDER BY id ASC made by EP_Forum_Migration->run_migration, EP_Forum_Migration->migrate_topics
+[04-Jun-2025 06:09:53 UTC] WordPress database error Unknown column 'id' in 'order clause' for query SELECT * FROM forum_posts ORDER BY id ASC made by EP_Forum_Migration->run_migration, EP_Forum_Migration->migrate_posts
+[04-Jun-2025 06:10:19 UTC] PHP Deprecated:  File Giao diện không có header.php<strong>không dùng nữa</strong> từ phiên bản 3.0.0! Không có giải pháp nào thay thế. Hãy định nghĩa mẫu header.php trong giao diện của bạn. in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 06:10:19 UTC] PHP Deprecated:  File Giao diện không có footer.php<strong>không dùng nữa</strong> từ phiên bản 3.0.0! Không có giải pháp nào thay thế. Hãy định nghĩa mẫu footer.php trong giao diện của bạn. in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 06:10:22 UTC] PHP Deprecated:  File Giao diện không có header.php<strong>không dùng nữa</strong> từ phiên bản 3.0.0! Không có giải pháp nào thay thế. Hãy định nghĩa mẫu header.php trong giao diện của bạn. in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 06:10:22 UTC] PHP Deprecated:  File Giao diện không có footer.php<strong>không dùng nữa</strong> từ phiên bản 3.0.0! Không có giải pháp nào thay thế. Hãy định nghĩa mẫu footer.php trong giao diện của bạn. in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 06:10:30 UTC] PHP Deprecated:  File Giao diện không có header.php<strong>không dùng nữa</strong> từ phiên bản 3.0.0! Không có giải pháp nào thay thế. Hãy định nghĩa mẫu header.php trong giao diện của bạn. in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 06:10:30 UTC] PHP Deprecated:  File Giao diện không có footer.php<strong>không dùng nữa</strong> từ phiên bản 3.0.0! Không có giải pháp nào thay thế. Hãy định nghĩa mẫu footer.php trong giao diện của bạn. in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 08:32:06 UTC] Environmental Platform Events Plugin Activated
+[04-Jun-2025 08:32:06 UTC] PHP Warning:  Undefined property: WP_Post_Type::$supports in C:\xampp\htdocs\moitruong\integration-test.php on line 112
+[04-Jun-2025 08:32:06 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\moitruong\integration-test.php:112
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\integration-test.php(112): implode(', ', NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\moitruong\integration-test.php on line 112
+[04-Jun-2025 09:42:12 UTC] Automatic updates starting...
+[04-Jun-2025 09:42:13 UTC]   Automatic plugin updates starting...
+[04-Jun-2025 09:42:13 UTC]   Automatic plugin updates complete.
+[04-Jun-2025 09:42:14 UTC] Automatic updates complete.
+[04-Jun-2025 09:47:47 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Campaign_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\phase35-final-verification.php(24): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
+[04-Jun-2025 09:47:47 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121

@@ -1,0 +1,347 @@
+/**
+ * Environmental Platform ACF Admin Styles
+ * 
+ * Custom styles for ACF fields in the environmental platform
+ * 
+ * @package Environmental_Platform_Core
+ * @since 1.0.0 - Phase 30
+ */
+
+/* Environmental Field Styling */
+.environmental-field {
+    border-left: 4px solid #2e7d32;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.carbon-field {
+    border-left: 4px solid #d32f2f;
+}
+
+.sustainability-field {
+    border-left: 4px solid #388e3c;
+}
+
+/* ACF Group Styling */
+.acf-field-group .acf-field-object {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Environmental Impact Indicators */
+.environmental-impact-indicator {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.impact-minimal {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.impact-moderate {
+    background: #fff3e0;
+    color: #f57c00;
+}
+
+.impact-significant {
+    background: #ffebee;
+    color: #d32f2f;
+}
+
+.impact-severe {
+    background: #fce4ec;
+    color: #c2185b;
+}
+
+.impact-critical {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+/* Sustainability Score Display */
+.sustainability-label {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+
+.sustainability-label:contains("Excellent") {
+    background: #4caf50;
+}
+
+.sustainability-label:contains("Good") {
+    background: #8bc34a;
+}
+
+.sustainability-label:contains("Average") {
+    background: #ffc107;
+    color: #333;
+}
+
+.sustainability-label:contains("Poor") {
+    background: #ff9800;
+}
+
+.sustainability-label:contains("Very Poor") {
+    background: #f44336;
+}
+
+/* Range Slider Styling */
+.acf-field-range input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.acf-field-range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2e7d32;
+    cursor: pointer;
+}
+
+.acf-field-range input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2e7d32;
+    cursor: pointer;
+    border: none;
+}
+
+/* Carbon Calculator */
+.carbon-calculator {
+    background: #ffebee;
+    border: 1px solid #ffcdd2;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.carbon-calculator h4 {
+    color: #d32f2f;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.carbon-total {
+    font-weight: bold;
+    color: #d32f2f;
+    font-size: 16px;
+    text-align: right;
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+}
+
+/* Environmental Metrics */
+.environmental-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.environmental-metric {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.environmental-metric .metric-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32;
+    display: block;
+}
+
+.environmental-metric .metric-label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.environmental-metric .metric-unit {
+    font-size: 14px;
+    color: #999;
+}
+
+/* UN SDG Styling */
+.acf-field[data-name="un_sdg_alignment"] .acf-checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 8px;
+}
+
+.acf-field[data-name="un_sdg_alignment"] .acf-checkbox-list label {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.acf-field[data-name="un_sdg_alignment"] .acf-checkbox-list label:hover {
+    background: #f5f5f5;
+    border-color: #2e7d32;
+}
+
+.acf-field[data-name="un_sdg_alignment"] .acf-checkbox-list input:checked + label {
+    background: #e8f5e8;
+    border-color: #2e7d32;
+    color: #2e7d32;
+}
+
+/* Conditional Required Fields */
+.acf-conditional-required .acf-label label::after {
+    content: " *";
+    color: #d32f2f;
+}
+
+.acf-conditional-required .acf-input {
+    border-left: 3px solid #d32f2f;
+    padding-left: 12px;
+}
+
+/* Value Suggestions */
+.value-suggestion {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Improvement Percentage */
+.improvement-percentage {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-top: 5px;
+    padding: 3px 8px;
+    background: #e8f5e8;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+/* Validation Messages */
+.acf-validation-message {
+    color: #d32f2f;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background: #ffebee;
+    border: 1px solid #ffcdd2;
+    border-radius: 4px;
+}
+
+.acf-error {
+    border-color: #d32f2f !important;
+    box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2) !important;
+}
+
+/* Repeater Field Enhancements */
+.acf-repeater .acf-row {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.acf-repeater .acf-row:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.acf-repeater .acf-row-handle {
+    background: #2e7d32;
+    color: white;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 12px;
+    margin: -15px -15px 15px -15px;
+    font-weight: bold;
+}
+
+/* Gallery Field Enhancements */
+.acf-gallery .acf-gallery-main {
+    border: 2px dashed #e0e0e0;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.acf-gallery .acf-gallery-main:hover {
+    border-color: #2e7d32;
+    background: #f0f8f0;
+}
+
+/* Date Picker Enhancements */
+.acf-date-picker input {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.acf-date-picker input:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .environmental-metrics {
+        grid-template-columns: 1fr;
+    }
+    
+    .acf-field[data-name="un_sdg_alignment"] .acf-checkbox-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .environmental-field {
+        padding-left: 10px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .acf-field-group {
+        break-inside: avoid;
+    }
+    
+    .environmental-field {
+        border-left: 2px solid #000;
+    }
+    
+    .sustainability-label,
+    .environmental-impact-indicator,
+    .value-suggestion {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+    }
+}

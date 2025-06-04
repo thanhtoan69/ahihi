@@ -1,0 +1,497 @@
+/**
+ * Environmental Platform Events - Admin Styles
+ * Phase 34: Event Management System
+ */
+
+/* Admin Dashboard Styles */
+.ep-events-admin-dashboard {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.ep-events-dashboard-header {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.ep-events-dashboard-title {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.ep-events-dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ep-events-stat-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.ep-events-stat-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ep-events-stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #27ae60;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ep-events-stat-label {
+    color: #7f8c8d;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Event Meta Box Styles */
+.ep-events-meta-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.ep-events-meta-box-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.ep-events-meta-box-content {
+    padding: 20px;
+}
+
+.ep-events-field-group {
+    margin-bottom: 20px;
+}
+
+.ep-events-field-group:last-child {
+    margin-bottom: 0;
+}
+
+.ep-events-field-label {
+    display: block;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.ep-events-field-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.ep-events-field-input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+.ep-events-field-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.ep-events-field-select {
+    background: #fff;
+    cursor: pointer;
+}
+
+.ep-events-field-checkbox {
+    width: auto;
+    margin-right: 8px;
+}
+
+.ep-events-field-description {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Date and Time Fields */
+.ep-events-datetime-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .ep-events-datetime-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Location Fields */
+.ep-events-location-group {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.ep-events-location-toggle {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.ep-events-location-toggle:hover {
+    background: #2980b9;
+}
+
+/* Registration Settings */
+.ep-events-registration-settings {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.ep-events-capacity-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Pricing Fields */
+.ep-events-pricing-group {
+    background: #e8f5e8;
+    border: 1px solid #c3e6c3;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.ep-events-pricing-toggle {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.ep-events-pricing-toggle:hover {
+    background: #229954;
+}
+
+/* Analytics Charts */
+.ep-events-chart-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ep-events-chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Registration List */
+.ep-events-registrations-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.ep-events-registrations-table th,
+.ep-events-registrations-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.ep-events-registrations-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.ep-events-registrations-table tr:hover {
+    background: #f8f9fa;
+}
+
+.ep-events-status-confirmed {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.ep-events-status-pending {
+    color: #f39c12;
+    font-weight: 600;
+}
+
+.ep-events-status-cancelled {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* Action Buttons */
+.ep-events-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.ep-events-btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.ep-events-btn-primary:hover {
+    background: #2980b9;
+    color: white;
+}
+
+.ep-events-btn-success {
+    background: #27ae60;
+    color: white;
+}
+
+.ep-events-btn-success:hover {
+    background: #229954;
+    color: white;
+}
+
+.ep-events-btn-warning {
+    background: #f39c12;
+    color: white;
+}
+
+.ep-events-btn-warning:hover {
+    background: #e67e22;
+    color: white;
+}
+
+.ep-events-btn-danger {
+    background: #e74c3c;
+    color: white;
+}
+
+.ep-events-btn-danger:hover {
+    background: #c0392b;
+    color: white;
+}
+
+.ep-events-btn-small {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* Notifications */
+.ep-events-notice {
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.ep-events-notice-success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.ep-events-notice-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.ep-events-notice-warning {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+}
+
+.ep-events-notice-info {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+}
+
+/* Loading States */
+.ep-events-loading {
+    position: relative;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.ep-events-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: ep-events-spin 1s linear infinite;
+}
+
+@keyframes ep-events-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Map Container */
+.ep-events-map-container {
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* QR Code Display */
+.ep-events-qr-code {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.ep-events-qr-code img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .ep-events-dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ep-events-dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .ep-events-capacity-fields,
+    .ep-events-datetime-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .ep-events-registrations-table {
+        font-size: 14px;
+    }
+    
+    .ep-events-registrations-table th,
+    .ep-events-registrations-table td {
+        padding: 8px 10px;
+    }
+}
+
+/* WordPress Admin Integration */
+.folded .ep-events-admin-dashboard {
+    margin-left: 0;
+}
+
+#wpbody-content .ep-events-admin-dashboard {
+    padding-right: 20px;
+}
+
+/* Hide/Show Sections */
+.ep-events-section-hidden {
+    display: none;
+}
+
+.ep-events-section-visible {
+    display: block;
+}
+
+/* Toggle Switches */
+.ep-events-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.ep-events-toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.ep-events-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.ep-events-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .ep-events-toggle-slider {
+    background-color: #3498db;
+}
+
+input:checked + .ep-events-toggle-slider:before {
+    transform: translateX(26px);
+}

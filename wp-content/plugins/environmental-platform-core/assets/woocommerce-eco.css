@@ -1,0 +1,383 @@
+/**
+ * WooCommerce Integration Styles
+ * 
+ * Phase 32: E-commerce Integration (WooCommerce)
+ * Styles for eco-friendly features, badges, and sustainability displays
+ * 
+ * @package EnvironmentalPlatform
+ * @subpackage Assets
+ * @since 1.0.0
+ */
+
+/* Eco-Friendly Product Badges */
+.woocommerce .ep-eco-badges-container {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.woocommerce .ep-eco-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.woocommerce .ep-eco-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Shop Loop Eco Badges */
+.woocommerce ul.products li.product .eco-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.woocommerce ul.products li.product .eco-friendly-badge {
+    background: linear-gradient(135deg, #4CAF50, #66BB6A);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.woocommerce ul.products li.product .eco-rating-badge {
+    background: linear-gradient(135deg, #2196F3, #42A5F5);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Cart Eco Information */
+.woocommerce .eco-cart-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 6px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Environmental Impact Display in Cart */
+.woocommerce table.cart .environmental-impact th,
+.woocommerce .cart-collaterals .environmental-impact th {
+    background: #f8f9fa;
+    color: #2E7D32;
+    font-weight: bold;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.woocommerce table.cart .carbon-footprint-total td,
+.woocommerce .cart-collaterals .carbon-footprint-total td {
+    color: #d84315;
+    font-weight: bold;
+}
+
+.woocommerce table.cart .sustainability-score-total td,
+.woocommerce .cart-collaterals .sustainability-score-total td {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+/* Sustainability Tab on Product Page */
+.woocommerce div.product .woocommerce-tabs ul.tabs li.sustainability_tab a {
+    color: #4CAF50;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.sustainability_tab.active a {
+    background: #4CAF50;
+    color: white;
+}
+
+.woocommerce div.product .sustainability-info {
+    padding: 20px;
+    background: #f8fff8;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.woocommerce div.product .sustainability-score {
+    margin: 15px 0;
+}
+
+.woocommerce div.product .sustainability-score .score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.woocommerce div.product .score-bar {
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.woocommerce div.product .score-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #FF5722 0%, #FF9800 25%, #FFC107 50%, #8BC34A 75%, #4CAF50 100%);
+    transition: width 0.3s ease;
+}
+
+.woocommerce div.product .carbon-footprint .footprint {
+    color: #d84315;
+    font-weight: bold;
+}
+
+.woocommerce div.product .eco-rating .rating {
+    padding: 3px 8px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.woocommerce div.product .rating-aplus { background: #4CAF50; }
+.woocommerce div.product .rating-a { background: #8BC34A; }
+.woocommerce div.product .rating-b { background: #CDDC39; color: #333; }
+.woocommerce div.product .rating-c { background: #FFC107; color: #333; }
+.woocommerce div.product .rating-d { background: #FF9800; }
+.woocommerce div.product .rating-e { background: #F44336; }
+
+.woocommerce div.product .eco-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.woocommerce div.product .eco-features li.feature {
+    margin: 8px 0;
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.woocommerce div.product .eco-features li.recyclable {
+    border-left: 4px solid #2196F3;
+}
+
+.woocommerce div.product .eco-features li.biodegradable {
+    border-left: 4px solid #4CAF50;
+}
+
+/* Checkout Eco Fields */
+.woocommerce form.checkout .eco-checkout-section {
+    background: #f0f9ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid #2196F3;
+}
+
+.woocommerce form.checkout .eco-checkout-section h3 {
+    color: #1976D2;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.woocommerce form.checkout input[type="checkbox"]#billing_carbon_offset {
+    margin-right: 8px;
+}
+
+.woocommerce form.checkout label[for="billing_carbon_offset"] {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+.woocommerce form.checkout select#shipping_eco_packaging {
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+}
+
+.woocommerce form.checkout .carbon-offset-info {
+    background: #e8f5e8;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #2E7D32;
+}
+
+/* Email Styles */
+.woocommerce-email .ep-environmental-impact {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #f8fff8;
+}
+
+.woocommerce-email .ep-environmental-impact h3 {
+    color: #2E7D32;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.woocommerce-email .ep-eco-points {
+    background-color: #e8f5e8;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.woocommerce-email .ep-sustainability-tips {
+    background-color: #f0f9ff;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 4px solid #2196F3;
+}
+
+/* Admin Eco Product Fields */
+.woocommerce_page_wc-settings .ep-wc-settings-card {
+    background: white;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.woocommerce_page_wc-settings .ep-wc-settings-card h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c3c4c7;
+    color: #2E7D32;
+}
+
+#environmental_product_data .form-field {
+    margin-bottom: 15px;
+}
+
+#environmental_product_data label {
+    color: #2E7D32;
+    font-weight: 600;
+}
+
+#environmental_product_data input[type="number"],
+#environmental_product_data select,
+#environmental_product_data textarea {
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+}
+
+#environmental_product_data .description {
+    color: #666;
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .woocommerce .ep-eco-badges-container {
+        justify-content: center;
+        margin: 5px 0;
+    }
+    
+    .woocommerce .ep-eco-badge {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    
+    .woocommerce ul.products li.product .eco-badge {
+        top: 5px;
+        left: 5px;
+    }
+    
+    .woocommerce div.product .sustainability-info {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    .woocommerce form.checkout .eco-checkout-section {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .woocommerce .ep-eco-badge {
+        font-size: 9px;
+        padding: 2px 5px;
+    }
+    
+    .woocommerce div.product .sustainability-score .score {
+        font-size: 16px;
+    }
+    
+    .woocommerce ul.products li.product .eco-friendly-badge,
+    .woocommerce ul.products li.product .eco-rating-badge {
+        font-size: 8px;
+        padding: 2px 5px;
+    }
+}
+
+/* Animation for eco elements */
+@keyframes ecoGlow {
+    0% { box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(76, 175, 80, 0.6); }
+    100% { box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); }
+}
+
+.woocommerce .ep-eco-badge:hover {
+    animation: ecoGlow 2s infinite;
+}
+
+/* Loading states for environmental data */
+.ep-loading-eco-data {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #4CAF50;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Print styles for eco-friendly information */
+@media print {
+    .woocommerce .ep-eco-badges-container,
+    .woocommerce .environmental-impact {
+        color: black !important;
+        background: none !important;
+        border: 1px solid black !important;
+    }
+    
+    .woocommerce .ep-eco-badge {
+        border: 1px solid black !important;
+        background: none !important;
+        color: black !important;
+    }
+}

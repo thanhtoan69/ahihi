@@ -1,0 +1,785 @@
+/**
+ * Environmental Platform Events - Frontend Styles
+ * Version: 1.0.0
+ */
+
+/* ==========================================================================
+   EVENT CALENDAR STYLES
+   ========================================================================== */
+
+.ep-events-calendar {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.ep-calendar-header {
+    background: linear-gradient(135deg, #2e8b57, #228b22);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ep-calendar-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.ep-calendar-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.ep-calendar-nav button {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ep-calendar-nav button:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.ep-calendar-views {
+    display: flex;
+    gap: 5px;
+}
+
+.ep-view-btn {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.ep-view-btn.active,
+.ep-view-btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Month View */
+.ep-calendar-month {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.ep-calendar-day-header {
+    background: #f8f9fa;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.ep-calendar-day {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-left: none;
+    min-height: 120px;
+    padding: 8px;
+    position: relative;
+    background: #fff;
+}
+
+.ep-calendar-day:nth-child(7n) {
+    border-right: none;
+}
+
+.ep-calendar-day.other-month {
+    background: #f8f9fa;
+    color: #adb5bd;
+}
+
+.ep-calendar-day.today {
+    background: #fff3cd;
+    border-color: #ffeaa7;
+}
+
+.ep-day-number {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.ep-day-events {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.ep-event-item {
+    background: #28a745;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ep-event-item:hover {
+    background: #218838;
+    transform: translateY(-1px);
+}
+
+.ep-event-item.workshop {
+    background: #007bff;
+}
+
+.ep-event-item.cleanup {
+    background: #28a745;
+}
+
+.ep-event-item.education {
+    background: #ffc107;
+    color: #212529;
+}
+
+.ep-event-item.campaign {
+    background: #dc3545;
+}
+
+/* ==========================================================================
+   SINGLE EVENT STYLES
+   ========================================================================== */
+
+.ep-single-event {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.ep-event-hero {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(135deg, #2e8b57, #228b22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.ep-event-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.ep-event-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.ep-event-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.ep-event-subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.ep-event-content {
+    padding: 40px;
+}
+
+.ep-event-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.ep-event-info h3 {
+    color: #2e8b57;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.ep-event-meta {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+}
+
+.ep-meta-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.ep-meta-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.ep-meta-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    color: #28a745;
+    font-size: 16px;
+}
+
+.ep-meta-label {
+    font-weight: 600;
+    margin-right: 8px;
+    color: #495057;
+    min-width: 80px;
+}
+
+.ep-meta-value {
+    color: #212529;
+}
+
+/* Registration Section */
+.ep-registration-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 2px solid #dee2e6;
+}
+
+.ep-registration-title {
+    color: #2e8b57;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.ep-registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.ep-form-group {
+    margin-bottom: 20px;
+}
+
+.ep-form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.ep-form-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.ep-form-input:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.ep-form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.ep-register-btn {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ep-register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.ep-register-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Environmental Impact Section */
+.ep-environmental-impact {
+    background: linear-gradient(135deg, #e8f5e8, #d4edda);
+    padding: 25px;
+    border-radius: 8px;
+    margin: 30px 0;
+    border-left: 5px solid #28a745;
+}
+
+.ep-impact-title {
+    color: #155724;
+    margin-bottom: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ep-impact-title::before {
+    content: '🌱';
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.ep-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.ep-impact-item {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ep-impact-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #28a745;
+    margin-bottom: 5px;
+}
+
+.ep-impact-label {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* ==========================================================================
+   EVENT ARCHIVE STYLES
+   ========================================================================== */
+
+.ep-events-archive {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ep-events-header {
+    background: linear-gradient(135deg, #2e8b57, #228b22);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ep-events-header h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+}
+
+.ep-events-header p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.ep-events-filters {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.ep-filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ep-filter-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.ep-filter-select {
+    padding: 8px 12px;
+    border: 2px solid #dee2e6;
+    border-radius: 4px;
+    background: white;
+    min-width: 150px;
+}
+
+.ep-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.ep-event-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.ep-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.ep-event-card-header {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.ep-event-date {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ep-event-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    line-height: 1.3;
+}
+
+.ep-event-type {
+    background: rgba(255,255,255,0.3);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.ep-event-card-body {
+    padding: 20px;
+}
+
+.ep-event-excerpt {
+    color: #6c757d;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.ep-event-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.ep-card-meta-item {
+    display: flex;
+    align-items: center;
+    color: #6c757d;
+}
+
+.ep-card-meta-item i {
+    margin-right: 5px;
+    color: #28a745;
+}
+
+.ep-event-card-footer {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ep-view-event-btn {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.ep-view-event-btn:hover {
+    background: #218838;
+    transform: translateY(-1px);
+}
+
+.ep-registration-status {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.ep-registration-status.open {
+    background: #d4edda;
+    color: #155724;
+}
+
+.ep-registration-status.full {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.ep-registration-status.closed {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* ==========================================================================
+   QR CODE STYLES
+   ========================================================================== */
+
+.ep-qr-section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+    border: 2px dashed #28a745;
+}
+
+.ep-qr-title {
+    color: #28a745;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.ep-qr-code {
+    margin: 15px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.ep-qr-instructions {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .ep-calendar-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .ep-calendar-nav {
+        justify-content: center;
+    }
+    
+    .ep-calendar-day {
+        min-height: 80px;
+    }
+    
+    .ep-event-details {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .ep-event-title {
+        font-size: 28px;
+    }
+    
+    .ep-events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ep-events-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .ep-filter-group {
+        justify-content: space-between;
+    }
+    
+    .ep-impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .ep-event-content {
+        padding: 20px;
+    }
+    
+    .ep-registration-section {
+        padding: 20px;
+    }
+    
+    .ep-event-card {
+        margin: 0 10px;
+    }
+    
+    .ep-calendar-day {
+        min-height: 60px;
+        padding: 4px;
+    }
+    
+    .ep-day-number {
+        font-size: 12px;
+    }
+    
+    .ep-event-item {
+        font-size: 10px;
+        padding: 1px 4px;
+    }
+}
+
+/* ==========================================================================
+   LOADING AND SUCCESS STATES
+   ========================================================================== */
+
+.ep-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #28a745;
+    border-radius: 50%;
+    animation: ep-spin 1s linear infinite;
+}
+
+@keyframes ep-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ep-success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #c3e6cb;
+    margin: 15px 0;
+}
+
+.ep-error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #f5c6cb;
+    margin: 15px 0;
+}
+
+.ep-info-message {
+    background: #d1ecf1;
+    color: #0c5460;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #bee5eb;
+    margin: 15px 0;
+}
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+.ep-fade-in {
+    animation: ep-fadeIn 0.5s ease-in-out;
+}
+
+@keyframes ep-fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.ep-slide-up {
+    animation: ep-slideUp 0.3s ease-out;
+}
+
+@keyframes ep-slideUp {
+    from { transform: translateY(10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+.ep-text-center { text-align: center; }
+.ep-text-left { text-align: left; }
+.ep-text-right { text-align: right; }
+
+.ep-mb-0 { margin-bottom: 0 !important; }
+.ep-mb-1 { margin-bottom: 10px !important; }
+.ep-mb-2 { margin-bottom: 20px !important; }
+.ep-mb-3 { margin-bottom: 30px !important; }
+
+.ep-mt-0 { margin-top: 0 !important; }
+.ep-mt-1 { margin-top: 10px !important; }
+.ep-mt-2 { margin-top: 20px !important; }
+.ep-mt-3 { margin-top: 30px !important; }
+
+.ep-hidden { display: none !important; }
+.ep-visible { display: block !important; }
+
+.ep-green { color: #28a745 !important; }
+.ep-red { color: #dc3545 !important; }
+.ep-blue { color: #007bff !important; }
+.ep-yellow { color: #ffc107 !important; }
