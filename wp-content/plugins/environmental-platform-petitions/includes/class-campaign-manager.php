@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Environmental_Platform_Petitions_Campaign_Manager {
+class EPP_Campaign_Manager {
     
     /**
      * Database instance
@@ -23,7 +23,7 @@ class Environmental_Platform_Petitions_Campaign_Manager {
      * Constructor
      */
     public function __construct() {
-        $this->database = new Environmental_Platform_Petitions_Database();
+        $this->database = new EPP_Database();
         $this->init_hooks();
     }
     

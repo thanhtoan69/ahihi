@@ -240,3 +240,134 @@ Stack trace:
 #8 {main}
   thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
 [04-Jun-2025 13:03:59 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 13:55:03 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Campaign_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
+[04-Jun-2025 13:55:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 14:17:03 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Campaign_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
+[04-Jun-2025 14:17:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 21:28:22 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Campaign_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\test-env-dashboard.php(8): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
+[04-Jun-2025 21:28:22 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 21:35:03 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Campaign_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\test-env-dashboard.php(8): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
+[04-Jun-2025 21:35:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 21:36:51 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Campaign_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
+[04-Jun-2025 21:36:51 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 21:43:33 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Campaign_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\test-admin-integration.php(9): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
+[04-Jun-2025 21:43:33 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 21:49:07 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Campaign_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\test-env-dashboard.php(8): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 134
+[04-Jun-2025 21:49:07 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 21:53:48 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[04-Jun-2025 21:53:48 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 21:55:17 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[04-Jun-2025 21:55:17 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 21:56:07 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[04-Jun-2025 21:56:07 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
