@@ -371,3 +371,16 @@ Stack trace:
 #8 {main}
   thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
 [04-Jun-2025 21:56:07 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[04-Jun-2025 22:54:48 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(116): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\phase40-final-verification.php(7): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[04-Jun-2025 22:54:49 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[05-Jun-2025 10:57:36 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\xampp\htdocs\moitruong\wp-includes\class-wpdb.php on line 1988

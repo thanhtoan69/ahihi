@@ -1,0 +1,771 @@
+/**
+ * Environmental Social Viral Frontend Styles
+ * 
+ * Comprehensive styling for the social sharing and viral features system
+ * including sharing buttons, viral dashboard, referral widgets, and notifications.
+ * 
+ * @package Environmental_Social_Viral
+ * @since 1.0.0
+ */
+
+/* ================================================
+   Base Variables and Reset
+   ================================================ */
+:root {
+    --esv-primary: #4CAF50;
+    --esv-primary-dark: #388E3C;
+    --esv-secondary: #2196F3;
+    --esv-secondary-dark: #1976D2;
+    --esv-success: #4CAF50;
+    --esv-warning: #FF9800;
+    --esv-danger: #F44336;
+    --esv-info: #2196F3;
+    --esv-light: #F5F5F5;
+    --esv-dark: #333333;
+    --esv-text: #212121;
+    --esv-text-muted: #757575;
+    --esv-border: #E0E0E0;
+    --esv-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --esv-shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    --esv-radius: 6px;
+    --esv-transition: all 0.3s ease;
+}
+
+/* ================================================
+   Sharing Buttons
+   ================================================ */
+.env-sharing-buttons {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: var(--esv-radius);
+    box-shadow: var(--esv-shadow);
+}
+
+.env-sharing-counts {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--esv-border);
+}
+
+.env-total-shares {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--esv-text);
+}
+
+.env-sharing-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.env-share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: 1px solid var(--esv-border);
+    border-radius: var(--esv-radius);
+    background: #fff;
+    color: var(--esv-text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--esv-transition);
+    position: relative;
+}
+
+.env-share-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--esv-shadow-hover);
+    border-color: var(--esv-primary);
+}
+
+.env-share-button.env-sharing {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.env-share-button.env-share-hover {
+    animation: shareButtonPulse 0.6s ease-in-out;
+}
+
+/* Platform-specific colors */
+.env-share-facebook { border-color: #1877F2; }
+.env-share-facebook:hover { background: #1877F2; color: white; }
+
+.env-share-twitter { border-color: #1DA1F2; }
+.env-share-twitter:hover { background: #1DA1F2; color: white; }
+
+.env-share-linkedin { border-color: #0A66C2; }
+.env-share-linkedin:hover { background: #0A66C2; color: white; }
+
+.env-share-pinterest { border-color: #E60023; }
+.env-share-pinterest:hover { background: #E60023; color: white; }
+
+.env-share-whatsapp { border-color: #25D366; }
+.env-share-whatsapp:hover { background: #25D366; color: white; }
+
+.env-share-telegram { border-color: #0088CC; }
+.env-share-telegram:hover { background: #0088CC; color: white; }
+
+.env-share-email { border-color: #34495E; }
+.env-share-email:hover { background: #34495E; color: white; }
+
+.env-share-copy { border-color: var(--esv-text-muted); }
+.env-share-copy:hover { background: var(--esv-text-muted); color: white; }
+
+.env-share-icon {
+    font-size: 16px;
+    min-width: 16px;
+}
+
+.env-share-label {
+    white-space: nowrap;
+}
+
+.env-share-count {
+    background: var(--esv-light);
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Button Styles */
+.env-style-minimal .env-share-button {
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+
+.env-style-rounded .env-share-button {
+    border-radius: 25px;
+}
+
+.env-size-small .env-share-button {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.env-size-large .env-share-button {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+/* ================================================
+   Viral Dashboard
+   ================================================ */
+.env-viral-dashboard {
+    background: #fff;
+    border-radius: var(--esv-radius);
+    box-shadow: var(--esv-shadow);
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.env-viral-dashboard h3 {
+    margin: 0 0 20px 0;
+    color: var(--esv-text);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.env-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.env-stat-item {
+    text-align: center;
+    padding: 20px;
+    background: var(--esv-light);
+    border-radius: var(--esv-radius);
+    transition: var(--esv-transition);
+}
+
+.env-stat-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--esv-shadow-hover);
+}
+
+.env-stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--esv-primary);
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.env-stat-label {
+    font-size: 14px;
+    color: var(--esv-text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.env-viral-charts {
+    margin: 30px 0;
+    padding: 20px;
+    background: var(--esv-light);
+    border-radius: var(--esv-radius);
+}
+
+.env-viral-content-list h4 {
+    margin: 0 0 15px 0;
+    color: var(--esv-text);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.env-content-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.env-content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid var(--esv-border);
+    border-radius: var(--esv-radius);
+    transition: var(--esv-transition);
+}
+
+.env-content-item:hover {
+    border-color: var(--esv-primary);
+    box-shadow: var(--esv-shadow);
+}
+
+.env-content-item h5 {
+    margin: 0;
+    flex: 1;
+}
+
+.env-content-item h5 a {
+    color: var(--esv-text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.env-content-item h5 a:hover {
+    color: var(--esv-primary);
+}
+
+.env-content-stats {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--esv-text-muted);
+}
+
+.env-content-rank {
+    background: var(--esv-primary);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.env-content-info {
+    flex: 1;
+}
+
+.env-viral-indicator {
+    margin-left: 15px;
+}
+
+.env-viral-badge {
+    background: linear-gradient(45deg, #FF6B35, #F7931E);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    animation: viralPulse 2s infinite;
+}
+
+/* ================================================
+   Referral Widget
+   ================================================ */
+.env-referral-widget {
+    background: #fff;
+    border-radius: var(--esv-radius);
+    box-shadow: var(--esv-shadow);
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.env-referral-widget h4 {
+    margin: 0 0 20px 0;
+    color: var(--esv-text);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.env-referral-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.env-referral-stat {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    background: var(--esv-light);
+    border-radius: var(--esv-radius);
+}
+
+.env-referral-stat .env-stat-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--esv-secondary);
+    margin-bottom: 5px;
+}
+
+.env-referral-stat .env-stat-label {
+    font-size: 12px;
+    color: var(--esv-text-muted);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.env-referral-link-section {
+    margin-bottom: 25px;
+}
+
+.env-referral-link-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--esv-text);
+}
+
+.env-link-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.env-referral-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid var(--esv-border);
+    border-radius: var(--esv-radius);
+    font-size: 14px;
+    background: var(--esv-light);
+}
+
+.env-copy-button {
+    padding: 10px 15px;
+    background: var(--esv-secondary);
+    color: white;
+    border: none;
+    border-radius: var(--esv-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--esv-transition);
+}
+
+.env-copy-button:hover {
+    background: var(--esv-secondary-dark);
+}
+
+.env-referral-code {
+    font-size: 14px;
+    color: var(--esv-text-muted);
+}
+
+.env-referral-code strong {
+    color: var(--esv-primary);
+    font-weight: 700;
+}
+
+.env-social-share-referral p {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    color: var(--esv-text);
+}
+
+.env-referral-share-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.env-referral-share-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--esv-border);
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--esv-transition);
+}
+
+.env-referral-share-button:hover {
+    transform: scale(1.1);
+}
+
+/* ================================================
+   Sharing Stats Widget
+   ================================================ */
+.env-sharing-stats {
+    background: #fff;
+    border-radius: var(--esv-radius);
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.env-style-compact .env-sharing-stats {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+}
+
+.env-sharing-stats h4 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--esv-text);
+}
+
+.env-shares-count {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--esv-primary);
+}
+
+/* ================================================
+   Viral Content Widget
+   ================================================ */
+.env-viral-content-widget {
+    background: #fff;
+    border-radius: var(--esv-radius);
+    box-shadow: var(--esv-shadow);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.env-viral-content-widget h3 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--esv-text);
+}
+
+.env-viral-content-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--esv-border);
+    border-radius: var(--esv-radius);
+    margin-bottom: 15px;
+    transition: var(--esv-transition);
+}
+
+.env-viral-content-item:hover {
+    border-color: var(--esv-primary);
+    transform: translateX(5px);
+}
+
+.env-load-more-viral {
+    width: 100%;
+    padding: 12px;
+    background: var(--esv-primary);
+    color: white;
+    border: none;
+    border-radius: var(--esv-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--esv-transition);
+}
+
+.env-load-more-viral:hover {
+    background: var(--esv-primary-dark);
+}
+
+.env-load-more-viral.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* ================================================
+   Notifications
+   ================================================ */
+.env-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: var(--esv-radius);
+    color: white;
+    font-weight: 600;
+    z-index: 10000;
+    animation: slideInRight 0.3s ease-out;
+    max-width: 300px;
+    box-shadow: var(--esv-shadow-hover);
+}
+
+.env-notification.success {
+    background: var(--esv-success);
+}
+
+.env-notification.error {
+    background: var(--esv-danger);
+}
+
+.env-notification.info {
+    background: var(--esv-info);
+}
+
+.env-notification.warning {
+    background: var(--esv-warning);
+}
+
+/* ================================================
+   Tooltips
+   ================================================ */
+.env-tooltip {
+    position: absolute;
+    background: var(--esv-dark);
+    color: white;
+    padding: 8px 12px;
+    border-radius: var(--esv-radius);
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.2s ease-out forwards;
+}
+
+.env-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--esv-dark);
+}
+
+/* ================================================
+   Loading States
+   ================================================ */
+.env-loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.env-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid var(--esv-border);
+    border-top-color: var(--esv-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* ================================================
+   Animations
+   ================================================ */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes shareButtonPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes viralPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* ================================================
+   Responsive Design
+   ================================================ */
+@media (max-width: 768px) {
+    .env-sharing-platforms {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .env-share-button {
+        justify-content: center;
+    }
+    
+    .env-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .env-referral-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .env-link-input-group {
+        flex-direction: column;
+    }
+    
+    .env-content-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .env-content-stats {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .env-notification {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .env-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .env-stat-number {
+        font-size: 24px;
+    }
+    
+    .env-viral-dashboard,
+    .env-referral-widget,
+    .env-viral-content-widget {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .env-sharing-buttons {
+        padding: 10px;
+    }
+}
+
+/* ================================================
+   Dark Mode Support
+   ================================================ */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --esv-light: #2C2C2C;
+        --esv-dark: #F5F5F5;
+        --esv-text: #E0E0E0;
+        --esv-text-muted: #BDBDBD;
+        --esv-border: #404040;
+    }
+    
+    .env-sharing-buttons,
+    .env-viral-dashboard,
+    .env-referral-widget,
+    .env-viral-content-widget,
+    .env-sharing-stats {
+        background: #1E1E1E;
+        color: var(--esv-text);
+    }
+    
+    .env-share-button,
+    .env-content-item {
+        background: #2C2C2C;
+        border-color: var(--esv-border);
+        color: var(--esv-text);
+    }
+    
+    .env-referral-input {
+        background: #2C2C2C;
+        color: var(--esv-text);
+    }
+}
+
+/* ================================================
+   Print Styles
+   ================================================ */
+@media print {
+    .env-sharing-buttons,
+    .env-referral-share-buttons,
+    .env-notification {
+        display: none !important;
+    }
+    
+    .env-viral-dashboard,
+    .env-referral-widget,
+    .env-viral-content-widget {
+        box-shadow: none;
+        border: 1px solid var(--esv-border);
+    }
+}
+
+/* ================================================
+   Accessibility Enhancements
+   ================================================ */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles for keyboard navigation */
+.env-share-button:focus,
+.env-copy-button:focus,
+.env-referral-share-button:focus,
+.env-load-more-viral:focus {
+    outline: 2px solid var(--esv-primary);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .env-share-button,
+    .env-content-item {
+        border-width: 2px;
+    }
+    
+    .env-viral-badge {
+        border: 2px solid white;
+    }
+}
