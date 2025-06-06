@@ -1,0 +1,27 @@
+{
+    "timestamp": "2025-06-05 15:44:58",
+    "score": 95,
+    "checks": {
+        "PHP Version": true,
+        "Memory Limit": true,
+        "File Uploads": "1",
+        "Database Connection": true,
+        "Critical Tables": false,
+        "environmental-platform-core": true,
+        "environmental-platform-forum": true,
+        "environmental-donation-system": true,
+        "environmental-item-exchange": true,
+        "environmental-voucher-rewards": true,
+        "environmental-platform-events": true,
+        "environmental-data-dashboard": true,
+        "environmental-mobile-api": true,
+        "environmental-analytics-reporting": true,
+        "Uploads Writable": true,
+        "Config File": true,
+        "Security Keys": true,
+        "Debug Mode": true,
+        "File Editing": true
+    },
+    "passed": 18,
+    "total": 19
+}

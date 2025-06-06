@@ -60,12 +60,12 @@ function environmental_platform_setup() {
         'width'       => 250,
         'flex-width'  => true,
         'flex-height' => true,
-    ));
-
-    // Register navigation menus
+    ));    // Register navigation menus
     register_nav_menus(array(
         'primary' => esc_html__('Primary Menu', 'environmental-platform'),
         'footer'  => esc_html__('Footer Menu', 'environmental-platform'),
+        'environmental' => esc_html__('Environmental Actions Menu', 'environmental-platform'),
+        'quick-links' => esc_html__('Quick Links Menu', 'environmental-platform'),
     ));
 
     // Add support for wide alignment
@@ -125,24 +125,69 @@ function environmental_platform_scripts() {
     // Theme stylesheet
     wp_enqueue_style('environmental-platform-style', get_stylesheet_uri(), array(), ENVIRONMENTAL_PLATFORM_VERSION);
 
+    // Component styles
+    wp_enqueue_style('environmental-platform-components', get_template_directory_uri() . '/assets/css/components.css', array('environmental-platform-style'), ENVIRONMENTAL_PLATFORM_VERSION);
+
     // Theme JavaScript
-    wp_enqueue_script('environmental-platform-script', get_template_directory_uri() . '/js/theme.js', array('jquery'), ENVIRONMENTAL_PLATFORM_VERSION, true);
+    wp_enqueue_script('environmental-platform-script', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), ENVIRONMENTAL_PLATFORM_VERSION, true);
+
+    // Admin styles and scripts (only on admin pages)
+    if (is_admin()) {
+        wp_enqueue_script('environmental-platform-admin', get_template_directory_uri() . '/js/admin-options.js', array('jquery', 'media-upload', 'thickbox'), ENVIRONMENTAL_PLATFORM_VERSION, true);
+        wp_enqueue_style('thickbox');
+    }
+
+    // Customizer preview script
+    if (is_customize_preview()) {
+        wp_enqueue_script('environmental-platform-customizer', get_template_directory_uri() . '/js/customizer.js', array('jquery', 'customize-preview'), ENVIRONMENTAL_PLATFORM_VERSION, true);
+    }
 
     // Localize script for AJAX and theme data
     wp_localize_script('environmental-platform-script', 'environmentalPlatform', array(
         'ajaxUrl' => admin_url('admin-ajax.php'),
         'nonce' => wp_create_nonce('environmental_platform_nonce'),
         'themeUrl' => get_template_directory_uri(),
+        'isUserLoggedIn' => is_user_logged_in(),
+        'userId' => get_current_user_id(),
         'strings' => array(
             'loading' => esc_html__('Loading...', 'environmental-platform'),
             'error' => esc_html__('An error occurred. Please try again.', 'environmental-platform'),
             'success' => esc_html__('Success!', 'environmental-platform'),
+            'searchPlaceholder' => esc_html__('Search environmental topics...', 'environmental-platform'),
+            'noResults' => esc_html__('No results found. Try different keywords.', 'environmental-platform'),
+            'shareTitle' => esc_html__('Share this content', 'environmental-platform'),
+            'copiedToClipboard' => esc_html__('Link copied to clipboard!', 'environmental-platform'),
         ),
     ));
 
     // Comment reply script
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
+    }
+
+    // Dark mode support
+    if (get_theme_mod('enable_dark_mode', true)) {
+        wp_add_inline_style('environmental-platform-style', '
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --primary-color: #4CAF50;
+                    --secondary-color: #81C784;
+                    --background-color: #1a1a1a;
+                    --text-color: #ffffff;
+                    --card-background: #2d2d2d;
+                    --border-color: #404040;
+                }
+            }
+            
+            body.dark-mode {
+                --primary-color: #4CAF50;
+                --secondary-color: #81C784;
+                --background-color: #1a1a1a;
+                --text-color: #ffffff;
+                --card-background: #2d2d2d;
+                --border-color: #404040;
+            }
+        ');
     }
 }
 add_action('wp_enqueue_scripts', 'environmental_platform_scripts');
@@ -310,6 +355,37 @@ function environmental_platform_body_classes($classes) {
         $classes[] = 'environmental-dashboard-page';
     }
 
+    // Add dark mode class
+    if (environmental_platform_get_dark_mode_preference()) {
+        $classes[] = 'dark-mode';
+    }
+
+    // Add environmental category classes
+    if (is_single()) {
+        $environmental_category = get_post_meta(get_the_ID(), '_environmental_category', true);
+        if ($environmental_category) {
+            $classes[] = 'environmental-category-' . $environmental_category;
+        }
+    }
+
+    // Add device-specific classes
+    if (wp_is_mobile()) {
+        $classes[] = 'mobile-device';
+    }
+
+    // Add template-specific classes
+    if (is_archive()) {
+        $classes[] = 'archive-layout';
+    }
+
+    if (is_search()) {
+        $classes[] = 'search-results-page';
+    }
+
+    if (is_404()) {
+        $classes[] = 'error-404-page';
+    }
+
     return $classes;
 }
 add_filter('body_class', 'environmental_platform_body_classes');
@@ -413,6 +489,116 @@ function environmental_platform_get_top_contributors($limit = 10) {
 
     return $contributors;
 }
+
+/**
+ * Dark mode toggle functionality
+ */
+function environmental_platform_toggle_dark_mode() {
+    check_ajax_referer('environmental_platform_nonce', 'nonce');
+    
+    $user_id = get_current_user_id();
+    $dark_mode = sanitize_text_field($_POST['dark_mode']);
+    
+    if ($user_id) {
+        update_user_meta($user_id, 'environmental_dark_mode', $dark_mode === 'true');
+    } else {
+        // For non-logged-in users, we'll use localStorage on the frontend
+        setcookie('environmental_dark_mode', $dark_mode, time() + (86400 * 30), COOKIEPATH, COOKIE_DOMAIN);
+    }
+    
+    wp_send_json_success(array('dark_mode' => $dark_mode));
+}
+add_action('wp_ajax_toggle_dark_mode', 'environmental_platform_toggle_dark_mode');
+add_action('wp_ajax_nopriv_toggle_dark_mode', 'environmental_platform_toggle_dark_mode');
+
+/**
+ * Get user's dark mode preference
+ */
+function environmental_platform_get_dark_mode_preference() {
+    $user_id = get_current_user_id();
+    
+    if ($user_id) {
+        return get_user_meta($user_id, 'environmental_dark_mode', true);
+    } else {
+        return isset($_COOKIE['environmental_dark_mode']) ? $_COOKIE['environmental_dark_mode'] === 'true' : false;
+    }
+}
+
+/**
+ * Environmental content search functionality
+ */
+function environmental_platform_search_content() {
+    check_ajax_referer('environmental_platform_nonce', 'nonce');
+    
+    $search_term = sanitize_text_field($_POST['search_term']);
+    $post_type = sanitize_text_field($_POST['post_type'] ?? 'post');
+    $category = sanitize_text_field($_POST['category'] ?? '');
+    
+    $args = array(
+        'post_type' => $post_type,
+        'post_status' => 'publish',
+        'posts_per_page' => 10,
+        's' => $search_term,
+        'meta_query' => array()
+    );
+    
+    if (!empty($category)) {
+        $args['meta_query'][] = array(
+            'key' => '_environmental_category',
+            'value' => $category,
+            'compare' => '='
+        );
+    }
+    
+    $query = new WP_Query($args);
+    $results = array();
+    
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            $results[] = array(
+                'id' => get_the_ID(),
+                'title' => get_the_title(),
+                'excerpt' => get_the_excerpt(),
+                'permalink' => get_permalink(),
+                'featured_image' => get_the_post_thumbnail_url(get_the_ID(), 'environmental-thumb'),
+                'environmental_score' => get_post_meta(get_the_ID(), '_environmental_score', true),
+                'carbon_impact' => get_post_meta(get_the_ID(), '_carbon_impact', true),
+                'date' => get_the_date(),
+            );
+        }
+        wp_reset_postdata();
+    }
+    
+    wp_send_json_success($results);
+}
+add_action('wp_ajax_search_environmental_content', 'environmental_platform_search_content');
+add_action('wp_ajax_nopriv_search_environmental_content', 'environmental_platform_search_content');
+
+/**
+ * Save user environmental preferences
+ */
+function environmental_platform_save_user_preferences() {
+    check_ajax_referer('environmental_platform_nonce', 'nonce');
+    
+    $user_id = get_current_user_id();
+    if (!$user_id) {
+        wp_send_json_error('User not logged in');
+        return;
+    }
+    
+    $preferences = array(
+        'newsletter_frequency' => sanitize_text_field($_POST['newsletter_frequency'] ?? 'weekly'),
+        'notification_types' => array_map('sanitize_text_field', $_POST['notification_types'] ?? array()),
+        'environmental_goals' => array_map('sanitize_text_field', $_POST['environmental_goals'] ?? array()),
+        'privacy_level' => sanitize_text_field($_POST['privacy_level'] ?? 'public'),
+    );
+    
+    update_user_meta($user_id, 'environmental_preferences', $preferences);
+    
+    wp_send_json_success($preferences);
+}
+add_action('wp_ajax_save_environmental_preferences', 'environmental_platform_save_user_preferences');
 
 /**
  * AJAX handler for environmental data
@@ -529,6 +715,149 @@ function environmental_platform_save_meta_box($post_id) {
 add_action('save_post', 'environmental_platform_save_meta_box');
 
 /**
+ * Performance optimizations
+ */
+function environmental_platform_optimize_performance() {
+    // Remove unnecessary WordPress features
+    remove_action('wp_head', 'wp_generator');
+    remove_action('wp_head', 'wlwmanifest_link');
+    remove_action('wp_head', 'rsd_link');
+    remove_action('wp_head', 'wp_shortlink_wp_head');
+    
+    // Optimize emoji scripts
+    if (!is_admin()) {
+        remove_action('wp_head', 'print_emoji_detection_script', 7);
+        remove_action('wp_print_styles', 'print_emoji_styles');
+        remove_action('admin_print_scripts', 'print_emoji_detection_script');
+        remove_action('admin_print_styles', 'print_emoji_styles');
+    }
+}
+add_action('init', 'environmental_platform_optimize_performance');
+
+/**
+ * Add preload hints for critical resources
+ */
+function environmental_platform_add_preload_hints() {
+    echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/css/components.css" as="style">' . "\n";
+    echo '<link rel="preload" href="' . get_template_directory_uri() . '/assets/js/theme.js" as="script">' . "\n";
+    
+    // Preload Google Fonts if used
+    if (get_theme_mod('google_fonts_enabled', false)) {
+        echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
+        echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+    }
+}
+add_action('wp_head', 'environmental_platform_add_preload_hints', 1);
+
+/**
+ * Custom login page styling
+ */
+function environmental_platform_custom_login_style() {
+    ?>
+    <style type="text/css">
+        body.login {
+            background: linear-gradient(135deg, #2E7D4A 0%, #4CAF50 100%);
+        }
+        
+        .login h1 a {
+            background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/logo-white.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 80px;
+        }
+        
+        .login form {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .login .button-primary {
+            background: #2E7D4A;
+            border-color: #2E7D4A;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-weight: 600;
+        }
+        
+        .login .button-primary:hover {
+            background: #4CAF50;
+            border-color: #4CAF50;
+        }
+    </style>
+    <?php
+}
+add_action('login_enqueue_scripts', 'environmental_platform_custom_login_style');
+
+/**
+ * Add environmental data to REST API
+ */
+function environmental_platform_add_rest_api_fields() {
+    register_rest_field('post', 'environmental_data', array(
+        'get_callback' => function($post) {
+            return array(
+                'environmental_score' => get_post_meta($post['id'], '_environmental_score', true),
+                'carbon_impact' => get_post_meta($post['id'], '_carbon_impact', true),
+                'environmental_category' => get_post_meta($post['id'], '_environmental_category', true),
+                'reading_time' => environmental_platform_get_reading_time($post['id']),
+            );
+        },
+        'schema' => array(
+            'description' => 'Environmental data for the post',
+            'type' => 'object',
+        ),
+    ));
+}
+add_action('rest_api_init', 'environmental_platform_add_rest_api_fields');
+
+/**
+ * Schema.org structured data for environmental content
+ */
+function environmental_platform_add_structured_data() {
+    if (is_single()) {
+        global $post;
+        
+        $environmental_score = get_post_meta($post->ID, '_environmental_score', true);
+        $carbon_impact = get_post_meta($post->ID, '_carbon_impact', true);
+        $environmental_category = get_post_meta($post->ID, '_environmental_category', true);
+        
+        $schema = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'Article',
+            'headline' => get_the_title(),
+            'description' => get_the_excerpt(),
+            'author' => array(
+                '@type' => 'Person',
+                'name' => get_the_author()
+            ),
+            'datePublished' => get_the_date('c'),
+            'dateModified' => get_the_modified_date('c'),
+            'url' => get_permalink(),
+            'mainEntityOfPage' => get_permalink(),
+        );
+        
+        if ($environmental_category) {
+            $schema['about'] = array(
+                '@type' => 'Thing',
+                'name' => ucfirst(str_replace('_', ' ', $environmental_category))
+            );
+        }
+        
+        if ($environmental_score) {
+            $schema['additionalProperty'] = array(
+                '@type' => 'PropertyValue',
+                'name' => 'Environmental Score',
+                'value' => $environmental_score
+            );
+        }
+        
+        echo '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
+    }
+}
+add_action('wp_head', 'environmental_platform_add_structured_data');
+
+/**
  * Add environmental platform dashboard to admin bar
  */
 function environmental_platform_admin_bar_menu($wp_admin_bar) {
@@ -550,3 +879,5 @@ add_action('admin_bar_menu', 'environmental_platform_admin_bar_menu', 100);
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/widgets.php';
+require get_template_directory() . '/inc/class-environmental-walker-nav-menu.php';
+require get_template_directory() . '/inc/theme-options.php';
