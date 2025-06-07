@@ -1,0 +1,682 @@
+/**
+ * Environmental Email Marketing - Frontend Styles
+ * 
+ * Styles for subscription forms, newsletters, preference centers,
+ * and other frontend email marketing components.
+ *
+ * @package Environmental_Email_Marketing
+ * @version 1.0.0
+ */
+
+/* ===== SUBSCRIPTION FORMS ===== */
+
+.eem-subscription-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.eem-subscription-form:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.eem-subscription-form h3 {
+    margin: 0 0 20px 0;
+    color: #2e7d32;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.eem-subscription-form p {
+    margin: 0 0 25px 0;
+    color: #666;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.eem-form-group {
+    margin-bottom: 20px;
+}
+
+.eem-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.eem-form-group input,
+.eem-form-group select,
+.eem-form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.eem-form-group input:focus,
+.eem-form-group select:focus,
+.eem-form-group textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.eem-form-group-inline {
+    display: flex;
+    gap: 15px;
+}
+
+.eem-form-group-inline .eem-form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.eem-checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.eem-checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.eem-checkbox-group label {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.eem-submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.eem-submit-btn:hover {
+    background: linear-gradient(135deg, #43a047 0%, #5cb85c 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.eem-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.eem-submit-btn .spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* ===== ENVIRONMENTAL THEMES ===== */
+
+.eem-theme-nature {
+    --primary-color: #4caf50;
+    --secondary-color: #8bc34a;
+    --accent-color: #2e7d32;
+    --background-color: #f1f8e9;
+    --text-color: #2e7d32;
+}
+
+.eem-theme-earth {
+    --primary-color: #2196f3;
+    --secondary-color: #03a9f4;
+    --accent-color: #1976d2;
+    --background-color: #e3f2fd;
+    --text-color: #1976d2;
+}
+
+.eem-theme-climate {
+    --primary-color: #f44336;
+    --secondary-color: #ff5722;
+    --accent-color: #d32f2f;
+    --background-color: #ffebee;
+    --text-color: #d32f2f;
+}
+
+.eem-theme-sustainable {
+    --primary-color: #795548;
+    --secondary-color: #8d6e63;
+    --accent-color: #5d4037;
+    --background-color: #efebe9;
+    --text-color: #5d4037;
+}
+
+.eem-theme-clean {
+    --primary-color: #607d8b;
+    --secondary-color: #78909c;
+    --accent-color: #455a64;
+    --background-color: #eceff1;
+    --text-color: #455a64;
+}
+
+/* Apply theme colors */
+[class*="eem-theme-"] .eem-subscription-form h3 {
+    color: var(--text-color);
+}
+
+[class*="eem-theme-"] .eem-submit-btn {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+[class*="eem-theme-"] .eem-form-group input:focus,
+[class*="eem-theme-"] .eem-form-group select:focus,
+[class*="eem-theme-"] .eem-form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(var(--primary-color), 0.1);
+}
+
+/* ===== NEWSLETTER POPUP ===== */
+
+.eem-newsletter-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.eem-newsletter-popup.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.eem-newsletter-modal {
+    background: white;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.eem-newsletter-popup.active .eem-newsletter-modal {
+    transform: scale(1);
+}
+
+.eem-newsletter-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #666;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.eem-newsletter-close:hover {
+    background: white;
+    color: #333;
+    transform: scale(1.1);
+}
+
+.eem-newsletter-header {
+    background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+    color: white;
+    padding: 40px 30px 30px;
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.eem-newsletter-header h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.eem-newsletter-header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.eem-newsletter-body {
+    padding: 30px;
+}
+
+.eem-newsletter-form .eem-form-group {
+    margin-bottom: 20px;
+}
+
+.eem-newsletter-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.eem-newsletter-benefits li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+}
+
+.eem-newsletter-benefits li::before {
+    content: "✓";
+    background: #4caf50;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* ===== PREFERENCE CENTER ===== */
+
+.eem-preference-center {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.eem-preference-center h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.eem-preference-section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.eem-preference-section h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 10px;
+}
+
+.eem-preference-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.eem-preference-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.eem-preference-item:hover {
+    border-color: #4caf50;
+    background: #f8fff8;
+}
+
+.eem-preference-item input[type="checkbox"] {
+    margin: 0;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.eem-preference-item label {
+    margin: 0;
+    cursor: pointer;
+    flex: 1;
+}
+
+.eem-preference-item .preference-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.eem-preference-item .preference-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* ===== UNSUBSCRIBE PAGE ===== */
+
+.eem-unsubscribe-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.eem-unsubscribe-icon {
+    width: 80px;
+    height: 80px;
+    background: #ffebee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    font-size: 2.5rem;
+    color: #f44336;
+}
+
+.eem-unsubscribe-page h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.eem-unsubscribe-page p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.eem-unsubscribe-options {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.eem-unsubscribe-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.eem-unsubscribe-option:hover {
+    border-color: #4caf50;
+    background: #f8fff8;
+}
+
+.eem-unsubscribe-option input[type="radio"] {
+    margin: 0;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.eem-unsubscribe-option label {
+    margin: 0;
+    cursor: pointer;
+    flex: 1;
+}
+
+.eem-unsubscribe-option .option-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.eem-unsubscribe-option .option-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* ===== SUCCESS/ERROR MESSAGES ===== */
+
+.eem-message {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+}
+
+.eem-message-success {
+    background: #e8f5e8;
+    border: 2px solid #c8e6c9;
+    color: #2e7d32;
+}
+
+.eem-message-error {
+    background: #ffebee;
+    border: 2px solid #ffcdd2;
+    color: #c62828;
+}
+
+.eem-message-warning {
+    background: #fff3e0;
+    border: 2px solid #ffe0b2;
+    color: #ef6c00;
+}
+
+.eem-message-info {
+    background: #e3f2fd;
+    border: 2px solid #bbdefb;
+    color: #1976d2;
+}
+
+.eem-message-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* ===== SUBSCRIPTION WIDGET ===== */
+
+.eem-subscription-widget {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.eem-subscription-widget h4 {
+    margin: 0 0 15px 0;
+    color: #2e7d32;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.eem-subscription-widget p {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.eem-widget-form .eem-form-group {
+    margin-bottom: 15px;
+}
+
+.eem-widget-form input {
+    padding: 10px 14px;
+    font-size: 13px;
+}
+
+.eem-widget-form .eem-submit-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+    .eem-subscription-form,
+    .eem-newsletter-body {
+        padding: 20px;
+    }
+    
+    .eem-form-group-inline {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .eem-form-group-inline .eem-form-group {
+        margin-bottom: 20px;
+    }
+    
+    .eem-newsletter-modal {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .eem-newsletter-header {
+        padding: 30px 20px 20px;
+    }
+    
+    .eem-newsletter-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .eem-preference-center {
+        padding: 20px 15px;
+    }
+    
+    .eem-preference-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .eem-unsubscribe-page {
+        padding: 20px 15px;
+    }
+    
+    .eem-unsubscribe-options {
+        padding: 20px;
+    }
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+.eem-fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.eem-slide-up {
+    animation: slideUp 0.3s ease-out;
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+.eem-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.eem-subscription-form:focus-within,
+.eem-preference-item:focus-within,
+.eem-unsubscribe-option:focus-within {
+    outline: 2px solid #4caf50;
+    outline-offset: 2px;
+}
+
+/* ===== PRINT STYLES ===== */
+
+@media print {
+    .eem-newsletter-popup,
+    .eem-submit-btn {
+        display: none !important;
+    }
+    
+    .eem-subscription-form,
+    .eem-preference-center,
+    .eem-unsubscribe-page {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

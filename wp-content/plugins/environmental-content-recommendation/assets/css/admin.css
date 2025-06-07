@@ -1,0 +1,642 @@
+/**
+ * Admin Styles for Environmental Content Recommendation Plugin
+ * Provides modern admin interface styling for dashboard and settings
+ */
+
+/* ==========================================================================
+   Admin Page Layout
+   ========================================================================== */
+
+.ecr-admin-page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ecr-admin-page h1 {
+    color: #2c5530;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   Dashboard Statistics Cards
+   ========================================================================== */
+
+.ecr-dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ecr-stat-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.ecr-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ecr-stat-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ecr-stat-number {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #4CAF50;
+    margin: 0;
+    line-height: 1;
+}
+
+/* ==========================================================================
+   Charts and Analytics
+   ========================================================================== */
+
+.ecr-dashboard-charts,
+.ecr-analytics-charts {
+    margin-bottom: 30px;
+}
+
+.ecr-chart-container {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ecr-chart-container h3 {
+    margin: 0 0 15px 0;
+    color: #2c5530;
+    font-size: 1.1em;
+}
+
+.ecr-chart-large {
+    grid-column: 1 / -1;
+}
+
+.ecr-analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* ==========================================================================
+   Analytics Filters
+   ========================================================================== */
+
+.ecr-analytics-filters {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ecr-analytics-filters select {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* ==========================================================================
+   Quick Actions
+   ========================================================================== */
+
+.ecr-quick-actions {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.ecr-quick-actions h3 {
+    margin: 0 0 15px 0;
+    color: #2c5530;
+}
+
+.ecr-action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ecr-action-buttons .button {
+    min-width: 150px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Recent Activity
+   ========================================================================== */
+
+.ecr-recent-activity {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.ecr-recent-activity h3 {
+    margin: 0 0 15px 0;
+    color: #2c5530;
+}
+
+.ecr-activity-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ecr-activity-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.ecr-activity-item:last-child {
+    border-bottom: none;
+}
+
+.ecr-activity-user {
+    font-weight: 600;
+    color: #2c5530;
+}
+
+.ecr-activity-action {
+    color: #666;
+}
+
+.ecr-activity-content {
+    font-style: italic;
+    color: #4CAF50;
+}
+
+.ecr-activity-time {
+    color: #999;
+    font-size: 0.85em;
+}
+
+/* ==========================================================================
+   Settings Tabs
+   ========================================================================== */
+
+.ecr-settings-tabs {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ecr-tab-nav {
+    background: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ecr-tab-link {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #666;
+    border-right: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.ecr-tab-link:hover,
+.ecr-tab-link.active {
+    background: #fff;
+    color: #2c5530;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.ecr-tab-content {
+    padding: 25px;
+    display: none;
+}
+
+.ecr-tab-content.active {
+    display: block;
+}
+
+.ecr-tab-content h2 {
+    margin: 0 0 20px 0;
+    color: #2c5530;
+    font-size: 1.3em;
+}
+
+/* ==========================================================================
+   Form Elements
+   ========================================================================== */
+
+.ecr-settings-tabs .form-table {
+    margin-top: 0;
+}
+
+.ecr-settings-tabs .form-table th {
+    color: #2c5530;
+    font-weight: 600;
+}
+
+.ecr-range-slider {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.ecr-range-value {
+    display: inline-block;
+    min-width: 30px;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+.ecr-settings-tabs input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.ecr-settings-tabs label {
+    font-weight: normal;
+}
+
+.ecr-settings-tabs .description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   Analytics Tables
+   ========================================================================== */
+
+.ecr-analytics-tables {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ecr-table-container {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ecr-table-container h3 {
+    margin: 0 0 15px 0;
+    color: #2c5530;
+}
+
+.ecr-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.ecr-data-table th {
+    background: #f9f9f9;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+    color: #2c5530;
+    font-weight: 600;
+}
+
+.ecr-data-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ecr-data-table tr:hover td {
+    background: #f9f9f9;
+}
+
+/* ==========================================================================
+   Behavior Overview
+   ========================================================================== */
+
+.ecr-behavior-overview {
+    margin-bottom: 30px;
+}
+
+.ecr-behavior-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.ecr-behavior-charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ecr-behavior-tables {
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Loading and Status States
+   ========================================================================== */
+
+.ecr-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.ecr-loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e0e0e0;
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    animation: ecr-spin 1s linear infinite;
+}
+
+@keyframes ecr-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ecr-status-message {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.ecr-status-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.ecr-status-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.ecr-status-warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.ecr-status-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+    .ecr-dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ecr-analytics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .ecr-dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .ecr-tab-nav {
+        flex-direction: column;
+    }
+    
+    .ecr-tab-link {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .ecr-analytics-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .ecr-analytics-filters select {
+        width: 100%;
+    }
+    
+    .ecr-action-buttons {
+        flex-direction: column;
+    }
+    
+    .ecr-action-buttons .button {
+        width: 100%;
+    }
+    
+    .ecr-analytics-tables {
+        grid-template-columns: 1fr;
+    }
+    
+    .ecr-behavior-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .ecr-behavior-charts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .ecr-tab-content {
+        padding: 15px;
+    }
+    
+    .ecr-stat-card {
+        padding: 15px;
+    }
+    
+    .ecr-stat-number {
+        font-size: 2em;
+    }
+    
+    .ecr-chart-container {
+        padding: 15px;
+    }
+}
+
+/* ==========================================================================
+   WordPress Admin Integration
+   ========================================================================== */
+
+.toplevel_page_ecr-recommendations .wp-menu-image:before {
+    content: "\f239";
+}
+
+.ecr-admin-page .notice {
+    margin: 15px 0;
+}
+
+.ecr-admin-page .updated,
+.ecr-admin-page .error {
+    margin: 15px 0;
+}
+
+/* ==========================================================================
+   Custom Icons
+   ========================================================================== */
+
+.ecr-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ecr-icon-recommendation:before {
+    content: "📊";
+}
+
+.ecr-icon-trending:before {
+    content: "📈";
+}
+
+.ecr-icon-environmental:before {
+    content: "🌱";
+}
+
+.ecr-icon-user:before {
+    content: "👤";
+}
+
+.ecr-icon-settings:before {
+    content: "⚙️";
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+    .ecr-admin-page {
+        color: #000;
+    }
+    
+    .ecr-tab-nav,
+    .ecr-action-buttons,
+    .button {
+        display: none;
+    }
+    
+    .ecr-tab-content {
+        display: block !important;
+        page-break-inside: avoid;
+    }
+    
+    .ecr-stat-card,
+    .ecr-chart-container {
+        border: 1px solid #ccc;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+}
+
+/* ==========================================================================
+   Accessibility Improvements
+   ========================================================================== */
+
+.ecr-tab-link:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: -2px;
+}
+
+.ecr-range-slider:focus {
+    outline: 2px solid #4CAF50;
+}
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ==========================================================================
+   Dark Mode Support (if WordPress admin uses dark mode)
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    .ecr-admin-page {
+        color: #e0e0e0;
+    }
+    
+    .ecr-stat-card,
+    .ecr-chart-container,
+    .ecr-quick-actions,
+    .ecr-recent-activity,
+    .ecr-table-container {
+        background: #2c2c2c;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    
+    .ecr-analytics-filters {
+        background: #2c2c2c;
+        border-color: #444;
+    }
+    
+    .ecr-tab-nav {
+        background: #1e1e1e;
+        border-color: #444;
+    }
+    
+    .ecr-tab-link {
+        color: #ccc;
+        border-color: #444;
+    }
+    
+    .ecr-tab-link:hover,
+    .ecr-tab-link.active {
+        background: #2c2c2c;
+        color: #4CAF50;
+    }
+}

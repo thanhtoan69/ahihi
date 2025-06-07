@@ -119,7 +119,8 @@ define( 'WP_CRON_LOCK_TIMEOUT', 60 );
  * Database optimization.
  */
 define( 'SAVEQUERIES', false );
-define( 'MYSQL_CLIENT_FLAGS', MYSQL_CLIENT_COMPRESS );
+// Define MySQL client flags for compression (commented out to avoid constant issues)
+// define( 'MYSQL_CLIENT_FLAGS', MYSQL_CLIENT_COMPRESS );
 
 /**
  * Image optimization.

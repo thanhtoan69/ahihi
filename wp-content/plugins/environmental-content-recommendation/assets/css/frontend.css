@@ -1,0 +1,527 @@
+/**
+ * Frontend Styles for Environmental Content Recommendation Plugin
+ * Provides responsive and modern styling for recommendation displays
+ */
+
+/* ==========================================================================
+   Recommendation Container Styles
+   ========================================================================== */
+
+.ecr-recommendations-container {
+    margin: 20px 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ecr-recommendations-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c5530;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 8px;
+}
+
+/* ==========================================================================
+   Grid Layout
+   ========================================================================== */
+
+.ecr-recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ecr-recommendation-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.ecr-recommendation-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #4CAF50;
+}
+
+/* ==========================================================================
+   List Layout
+   ========================================================================== */
+
+.ecr-recommendations-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ecr-recommendations-list .ecr-recommendation-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 15px;
+    align-items: center;
+}
+
+.ecr-recommendations-list .ecr-recommendation-thumbnail {
+    flex: 0 0 120px;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.ecr-recommendations-list .ecr-recommendation-content {
+    flex: 1;
+}
+
+/* ==========================================================================
+   Recommendation Item Components
+   ========================================================================== */
+
+.ecr-recommendation-thumbnail {
+    position: relative;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.ecr-recommendation-thumbnail img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ecr-recommendation-item:hover .ecr-recommendation-thumbnail img {
+    transform: scale(1.05);
+}
+
+.ecr-recommendation-content {
+    padding: 15px;
+}
+
+.ecr-recommendation-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.ecr-recommendation-title a {
+    color: #2c5530;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ecr-recommendation-title a:hover {
+    color: #4CAF50;
+}
+
+.ecr-recommendation-excerpt {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.ecr-recommendation-meta {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.ecr-recommendation-meta span {
+    margin-right: 10px;
+}
+
+/* ==========================================================================
+   Environmental Badges
+   ========================================================================== */
+
+.ecr-environmental-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ecr-environmental-score {
+    display: inline-flex;
+    align-items: center;
+    background: #f1f8e9;
+    color: #33691e;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.ecr-environmental-score::before {
+    content: "🌱";
+    margin-right: 4px;
+}
+
+.ecr-environmental-score.high {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.ecr-environmental-score.medium {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.ecr-environmental-score.low {
+    background: #fce4ec;
+    color: #c2185b;
+}
+
+/* ==========================================================================
+   Recommendation Actions
+   ========================================================================== */
+
+.ecr-recommendation-actions {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ecr-action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.ecr-action-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.ecr-action-btn:hover {
+    background: #f0f0f0;
+    border-color: #bbb;
+}
+
+.ecr-action-btn.like {
+    color: #e91e63;
+}
+
+.ecr-action-btn.like:hover {
+    background: #fce4ec;
+    border-color: #e91e63;
+}
+
+.ecr-action-btn.share {
+    color: #2196f3;
+}
+
+.ecr-action-btn.share:hover {
+    background: #e3f2fd;
+    border-color: #2196f3;
+}
+
+.ecr-action-btn.dismiss {
+    color: #757575;
+}
+
+.ecr-action-btn.dismiss:hover {
+    background: #f5f5f5;
+    border-color: #757575;
+}
+
+/* ==========================================================================
+   Loading States
+   ========================================================================== */
+
+.ecr-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: #666;
+}
+
+.ecr-loading-spinner {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #e0e0e0;
+    border-top: 2px solid #4CAF50;
+    border-radius: 50%;
+    animation: ecr-spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes ecr-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ecr-load-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ecr-load-more-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ecr-load-more-btn:hover {
+    background: #45a049;
+}
+
+.ecr-load-more-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   Widgets
+   ========================================================================== */
+
+.widget .ecr-widget-recommendations {
+    margin: 0;
+}
+
+.widget .ecr-recommendation-item {
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+.widget .ecr-recommendation-thumbnail {
+    margin-bottom: 8px;
+}
+
+.widget .ecr-recommendation-thumbnail img {
+    height: 120px;
+}
+
+.widget .ecr-recommendation-title {
+    font-size: 0.95em;
+    margin-bottom: 6px;
+}
+
+.widget .ecr-recommendation-excerpt {
+    font-size: 0.8em;
+    margin-bottom: 8px;
+}
+
+.widget .ecr-recommendation-meta {
+    font-size: 0.75em;
+}
+
+/* ==========================================================================
+   Error States
+   ========================================================================== */
+
+.ecr-error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 4px;
+    border-left: 4px solid #f44336;
+    margin: 15px 0;
+}
+
+.ecr-no-recommendations {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   Rating System
+   ========================================================================== */
+
+.ecr-rating-container {
+    margin-top: 10px;
+}
+
+.ecr-rating-stars {
+    display: inline-flex;
+    gap: 2px;
+}
+
+.ecr-rating-star {
+    color: #ddd;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.ecr-rating-star:hover,
+.ecr-rating-star.active {
+    color: #ffc107;
+}
+
+.ecr-rating-feedback {
+    margin-top: 10px;
+}
+
+.ecr-rating-feedback textarea {
+    width: 100%;
+    min-height: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9em;
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Search Integration
+   ========================================================================== */
+
+.ecr-search-recommendations {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.ecr-search-recommendations-title {
+    font-size: 1.2em;
+    color: #2c5530;
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .ecr-recommendations-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .ecr-recommendations-list .ecr-recommendation-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .ecr-recommendations-list .ecr-recommendation-thumbnail {
+        flex: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .ecr-recommendation-actions {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+    
+    .ecr-action-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ecr-recommendations-container {
+        margin: 15px 0;
+    }
+    
+    .ecr-recommendation-content {
+        padding: 12px;
+    }
+    
+    .ecr-recommendations-title {
+        font-size: 1.3em;
+    }
+    
+    .ecr-recommendation-title {
+        font-size: 1em;
+    }
+}
+
+/* ==========================================================================
+   Animation Classes
+   ========================================================================== */
+
+.ecr-fade-in {
+    animation: ecr-fadeIn 0.5s ease-in;
+}
+
+@keyframes ecr-fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.ecr-slide-in {
+    animation: ecr-slideIn 0.3s ease-out;
+}
+
+@keyframes ecr-slideIn {
+    from { transform: translateX(-10px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+
+.ecr-recommendation-item:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+.ecr-action-btn:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 1px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+    .ecr-recommendation-actions,
+    .ecr-action-buttons,
+    .ecr-load-more {
+        display: none;
+    }
+    
+    .ecr-recommendation-item {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

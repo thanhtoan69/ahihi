@@ -1,0 +1,143 @@
+# Environmental Notifications & Messaging System
+# Translation template file
+
+# Plugin header translations
+msgid "Environmental Notifications & Messaging System"
+msgstr ""
+
+msgid "Phase 54 - Real-time notification system with push notifications, email preferences, in-app messaging, and notification analytics for the Environmental Platform"
+msgstr ""
+
+# Menu items
+msgid "Notifications"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "All Notifications"
+msgstr ""
+
+msgid "Messages"
+msgstr ""
+
+msgid "Analytics"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+# Frontend strings
+msgid "New Notification"
+msgstr ""
+
+msgid "Mark as Read"
+msgstr ""
+
+msgid "Mark All as Read"
+msgstr ""
+
+msgid "View All Notifications"
+msgstr ""
+
+msgid "No notifications"
+msgstr ""
+
+msgid "Loading..."
+msgstr ""
+
+msgid "Error loading notifications"
+msgstr ""
+
+msgid "Send Message"
+msgstr ""
+
+msgid "Type your message..."
+msgstr ""
+
+msgid "Message sent successfully"
+msgstr ""
+
+msgid "Connection lost. Trying to reconnect..."
+msgstr ""
+
+msgid "Connection restored"
+msgstr ""
+
+# Notification types
+msgid "Waste Report Submitted"
+msgstr ""
+
+msgid "Your waste report for %s has been submitted successfully."
+msgstr ""
+
+msgid "New Environmental Event"
+msgstr ""
+
+msgid "New event: %s"
+msgstr ""
+
+msgid "Achievement Unlocked!"
+msgstr ""
+
+msgid "Congratulations! You earned the \"%s\" achievement."
+msgstr ""
+
+msgid "New Forum Post"
+msgstr ""
+
+msgid "New post in %s"
+msgstr ""
+
+msgid "Petition Signed"
+msgstr ""
+
+msgid "Thank you for signing \"%s\""
+msgstr ""
+
+# Admin strings
+msgid "Are you sure you want to delete this item?"
+msgstr ""
+
+msgid "Are you sure you want to delete the selected items?"
+msgstr ""
+
+msgid "Test notification sent successfully"
+msgstr ""
+
+msgid "Settings saved successfully"
+msgstr ""
+
+msgid "Template saved successfully"
+msgstr ""
+
+msgid "An error occurred. Please try again."
+msgstr ""
+
+msgid "No data available"
+msgstr ""
+
+msgid "Select a template..."
+msgstr ""
+
+msgid "Preview Template"
+msgstr ""
+
+msgid "Send Test Notification"
+msgstr ""
+
+msgid "Export Data"
+msgstr ""
+
+msgid "Import Data"
+msgstr ""
+
+# Error messages
+msgid "Environmental Notifications plugin requires Environmental Platform Core to be active."
+msgstr ""
+
+msgid "Push notifications blocked. Please enable in browser settings."
+msgstr ""
+
+msgid "Push notifications are not supported in this browser."
+msgstr ""

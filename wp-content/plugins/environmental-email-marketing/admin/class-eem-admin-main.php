@@ -108,9 +108,7 @@ class EEM_Admin_Main {
             'manage_options',
             'eem-automations',
             array($this, 'automations_page')
-        );
-
-        // Analytics submenu
+        );        // Analytics submenu
         add_submenu_page(
             'eem-dashboard',
             __('Analytics', 'environmental-email-marketing'),
@@ -118,6 +116,16 @@ class EEM_Admin_Main {
             'manage_options',
             'eem-analytics',
             array($this, 'analytics_page')
+        );
+
+        // Validation submenu (for testing and diagnostics)
+        add_submenu_page(
+            'eem-dashboard',
+            __('Validation & Testing', 'environmental-email-marketing'),
+            __('Validation', 'environmental-email-marketing'),
+            'manage_options',
+            'eem-validation',
+            array($this, 'validation_page')
         );
 
         // Settings submenu
@@ -442,11 +450,16 @@ class EEM_Admin_Main {
      */
     private function update_analytics_stats() {
         $analytics_tracker = new EEM_Analytics_Tracker();
-        $result = $analytics_tracker->update_campaign_stats();
-
-        return array(
+        $result = $analytics_tracker->update_campaign_stats();        return array(
             'success' => true,
             'message' => __('Analytics statistics updated successfully.', 'environmental-email-marketing')
         );
+    }
+
+    /**
+     * Display validation page
+     */
+    public function validation_page() {
+        include EEM_PLUGIN_PATH . 'admin/views/validation.php';
     }
 }

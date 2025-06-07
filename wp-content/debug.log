@@ -423,3 +423,13 @@ Stack trace:
 #8 {main}
   thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
 [05-Jun-2025 13:29:44 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[07-Jun-2025 13:20:01 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[07-Jun-2025 13:20:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\activate-plugin.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31

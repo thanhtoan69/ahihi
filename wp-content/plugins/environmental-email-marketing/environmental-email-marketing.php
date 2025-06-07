@@ -167,11 +167,16 @@ class Environmental_Email_Marketing {
         
         // REST API
         require_once EEM_PLUGIN_PATH . 'includes/api/class-eem-rest-api.php';
-        
-        // Utilities
+          // Utilities
         require_once EEM_PLUGIN_PATH . 'includes/utils/class-eem-logger.php';
         require_once EEM_PLUGIN_PATH . 'includes/utils/class-eem-validator.php';
-        require_once EEM_PLUGIN_PATH . 'includes/utils/class-eem-encryption.php';
+        require_once EEM_PLUGIN_PATH . 'includes/utils/class-eem-encryption.php';        // Test runner (only in development/testing)
+        if (defined('WP_DEBUG') && WP_DEBUG) {
+            require_once EEM_PLUGIN_PATH . 'includes/class-eem-test-runner.php';
+            require_once EEM_PLUGIN_PATH . 'includes/class-eem-ajax-validator.php';
+            require_once EEM_PLUGIN_PATH . 'includes/class-eem-system-status.php';
+            require_once EEM_PLUGIN_PATH . 'includes/class-eem-final-validator.php';
+        }
     }
     
     /**
@@ -650,8 +655,7 @@ class Environmental_Email_Marketing {
             wp_schedule_event(time(), 'hourly', 'eem_sync_with_providers');
         }
     }
-    
-    /**
+      /**
      * WooCommerce missing notice
      */
     public function woocommerce_missing_notice() {
@@ -668,7 +672,45 @@ class Environmental_Email_Marketing {
              sprintf(__('Environmental Email Marketing requires PHP 7.4 or higher. You are running PHP %s.', 'environmental-email-marketing'), PHP_VERSION) . 
              '</p></div>';
     }
-    
+      /**
+     * Clear scheduled cron events
+     */
+    private function clear_cron_events() {
+        wp_clear_scheduled_hook('eem_send_scheduled_campaigns');
+        wp_clear_scheduled_hook('eem_process_automation_sequences');
+        wp_clear_scheduled_hook('eem_cleanup_old_analytics');
+        wp_clear_scheduled_hook('eem_sync_with_providers');
+        wp_clear_scheduled_hook('eem_cleanup_expired_data');
+    }
+      /**
+     * Schedule cron events
+     */
+    private function schedule_cron_events() {
+        // Campaign sending queue
+        if (!wp_next_scheduled('eem_send_scheduled_campaigns')) {
+            wp_schedule_event(time(), 'eem_5min', 'eem_send_scheduled_campaigns');
+        }
+        
+        // Automation processing
+        if (!wp_next_scheduled('eem_process_automation_sequences')) {
+            wp_schedule_event(time(), 'eem_5min', 'eem_process_automation_sequences');
+        }
+        
+        // Analytics cleanup
+        if (!wp_next_scheduled('eem_cleanup_old_analytics')) {
+            wp_schedule_event(time(), 'daily', 'eem_cleanup_old_analytics');
+        }
+        
+        // Provider synchronization
+        if (!wp_next_scheduled('eem_sync_with_providers')) {
+            wp_schedule_event(time(), 'hourly', 'eem_sync_with_providers');
+        }
+        
+        // Data cleanup
+        if (!wp_next_scheduled('eem_cleanup_expired_data')) {
+            wp_schedule_event(time(), 'daily', 'eem_cleanup_expired_data');
+        }
+    }    
     /**
      * Get email provider
      */
