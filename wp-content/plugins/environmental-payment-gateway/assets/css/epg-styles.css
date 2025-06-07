@@ -1,0 +1,1079 @@
+/**
+ * Environmental Payment Gateway - Main Stylesheet
+ * 
+ * Comprehensive styling for all payment gateways with environmental focus
+ * Includes responsive design and accessibility features
+ */
+
+/* ==========================================================================
+   Base Styles & Variables
+   ========================================================================== */
+
+:root {
+    /* Environmental Color Palette */
+    --epg-green-primary: #2E7D32;
+    --epg-green-secondary: #4CAF50;
+    --epg-green-light: #81C784;
+    --epg-green-dark: #1B5E20;
+    --epg-eco-very-low: #4CAF50;
+    --epg-eco-low: #8BC34A;
+    --epg-eco-medium: #FFC107;
+    --epg-eco-high: #FF9800;
+    --epg-eco-very-high: #F44336;
+    
+    /* Base Colors */
+    --epg-white: #FFFFFF;
+    --epg-black: #212121;
+    --epg-gray-light: #F5F5F5;
+    --epg-gray-medium: #E0E0E0;
+    --epg-gray-dark: #757575;
+    --epg-blue: #2196F3;
+    --epg-red: #F44336;
+    --epg-orange: #FF9800;
+    
+    /* Typography */
+    --epg-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --epg-font-size-base: 16px;
+    --epg-font-size-small: 14px;
+    --epg-font-size-large: 18px;
+    --epg-font-size-xlarge: 24px;
+    --epg-line-height: 1.5;
+    
+    /* Spacing */
+    --epg-spacing-xs: 4px;
+    --epg-spacing-sm: 8px;
+    --epg-spacing-md: 16px;
+    --epg-spacing-lg: 24px;
+    --epg-spacing-xl: 32px;
+    --epg-spacing-xxl: 48px;
+    
+    /* Border Radius */
+    --epg-border-radius-sm: 4px;
+    --epg-border-radius-md: 8px;
+    --epg-border-radius-lg: 12px;
+    --epg-border-radius-xl: 16px;
+    
+    /* Shadows */
+    --epg-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --epg-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --epg-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --epg-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+    
+    /* Transitions */
+    --epg-transition-fast: 0.15s ease;
+    --epg-transition-normal: 0.3s ease;
+    --epg-transition-slow: 0.5s ease;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+.epg-payment-gateway {
+    font-family: var(--epg-font-family);
+    font-size: var(--epg-font-size-base);
+    line-height: var(--epg-line-height);
+    color: var(--epg-black);
+    background-color: var(--epg-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.epg-payment-gateway * {
+    box-sizing: border-box;
+}
+
+.epg-payment-gateway h1,
+.epg-payment-gateway h2,
+.epg-payment-gateway h3,
+.epg-payment-gateway h4,
+.epg-payment-gateway h5,
+.epg-payment-gateway h6 {
+    margin: 0 0 var(--epg-spacing-md) 0;
+    font-weight: 600;
+    color: var(--epg-black);
+}
+
+.epg-payment-gateway p {
+    margin: 0 0 var(--epg-spacing-md) 0;
+}
+
+.epg-payment-gateway ul,
+.epg-payment-gateway ol {
+    margin: 0 0 var(--epg-spacing-md) 0;
+    padding-left: var(--epg-spacing-lg);
+}
+
+.epg-payment-gateway button {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all var(--epg-transition-normal);
+}
+
+.epg-payment-gateway input,
+.epg-payment-gateway select,
+.epg-payment-gateway textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid var(--epg-gray-medium);
+    border-radius: var(--epg-border-radius-sm);
+    padding: var(--epg-spacing-sm) var(--epg-spacing-md);
+    transition: border-color var(--epg-transition-fast);
+}
+
+.epg-payment-gateway input:focus,
+.epg-payment-gateway select:focus,
+.epg-payment-gateway textarea:focus {
+    outline: none;
+    border-color: var(--epg-green-primary);
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.1);
+}
+
+/* ==========================================================================
+   Environmental Rating System
+   ========================================================================== */
+
+.epg-eco-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--epg-spacing-xs);
+    padding: var(--epg-spacing-xs) var(--epg-spacing-sm);
+    border-radius: var(--epg-border-radius-md);
+    font-size: var(--epg-font-size-small);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.epg-eco-rating.rating-very_low {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--epg-eco-very-low);
+}
+
+.epg-eco-rating.rating-low {
+    background-color: rgba(139, 195, 74, 0.1);
+    color: var(--epg-eco-low);
+}
+
+.epg-eco-rating.rating-medium {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: var(--epg-eco-medium);
+}
+
+.epg-eco-rating.rating-high {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: var(--epg-eco-high);
+}
+
+.epg-eco-rating.rating-very_high {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--epg-eco-very-high);
+}
+
+/* ==========================================================================
+   Environmental Impact Display
+   ========================================================================== */
+
+.epg-environmental-impact {
+    background: linear-gradient(135deg, #E8F5E8 0%, #F1F8F1 100%);
+    border: 1px solid var(--epg-green-light);
+    border-radius: var(--epg-border-radius-lg);
+    padding: var(--epg-spacing-lg);
+    margin: var(--epg-spacing-lg) 0;
+}
+
+.epg-environmental-impact.impact-very_high,
+.epg-environmental-impact.impact-high {
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+    border-color: var(--epg-eco-high);
+}
+
+.epg-environmental-impact.impact-medium {
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+    border-color: var(--epg-eco-medium);
+}
+
+.epg-carbon-footprint {
+    display: flex;
+    align-items: center;
+    gap: var(--epg-spacing-sm);
+    margin-bottom: var(--epg-spacing-md);
+}
+
+.epg-carbon-footprint .carbon-amount {
+    font-size: var(--epg-font-size-large);
+    font-weight: 700;
+    color: var(--epg-green-dark);
+}
+
+.epg-carbon-footprint .carbon-unit {
+    font-size: var(--epg-font-size-small);
+    color: var(--epg-gray-dark);
+}
+
+.epg-environmental-warning {
+    display: flex;
+    align-items: center;
+    gap: var(--epg-spacing-sm);
+    background-color: rgba(255, 152, 0, 0.1);
+    border: 1px solid var(--epg-orange);
+    border-radius: var(--epg-border-radius-md);
+    padding: var(--epg-spacing-md);
+    margin-bottom: var(--epg-spacing-md);
+    color: #E65100;
+}
+
+.epg-environmental-warning .warning-icon {
+    font-size: var(--epg-font-size-large);
+}
+
+.epg-environmental-recommendation {
+    background-color: rgba(76, 175, 80, 0.05);
+    border: 1px solid var(--epg-green-light);
+    border-radius: var(--epg-border-radius-md);
+    padding: var(--epg-spacing-lg);
+    margin-top: var(--epg-spacing-lg);
+}
+
+.epg-environmental-recommendation h4 {
+    color: var(--epg-green-dark);
+    margin-bottom: var(--epg-spacing-sm);
+}
+
+.epg-environmental-recommendation ul {
+    color: var(--epg-gray-dark);
+}
+
+/* ==========================================================================
+   Carbon Offset Controls
+   ========================================================================== */
+
+.epg-carbon-offset-container {
+    background: linear-gradient(135deg, #E8F5E8 0%, #C8E6C9 100%);
+    border: 1px solid var(--epg-green-light);
+    border-radius: var(--epg-border-radius-lg);
+    padding: var(--epg-spacing-lg);
+    margin: var(--epg-spacing-lg) 0;
+}
+
+.epg-offset-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--epg-spacing-md);
+    cursor: pointer;
+    transition: all var(--epg-transition-normal);
+}
+
+.epg-offset-checkbox:hover {
+    transform: translateY(-1px);
+}
+
+.epg-offset-checkbox input[type="checkbox"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.epg-offset-checkbox input[type="checkbox"]:checked {
+    background-color: var(--epg-green-primary);
+    border-color: var(--epg-green-primary);
+}
+
+.epg-offset-text {
+    flex: 1;
+}
+
+.epg-offset-text .offset-cost {
+    color: var(--epg-green-dark);
+    font-weight: 600;
+}
+
+.epg-offset-text .offset-description {
+    display: block;
+    color: var(--epg-gray-dark);
+    font-size: var(--epg-font-size-small);
+    margin-top: var(--epg-spacing-xs);
+}
+
+.epg-offset-active {
+    display: flex;
+    align-items: center;
+    gap: var(--epg-spacing-sm);
+    background-color: rgba(76, 175, 80, 0.1);
+    border: 1px solid var(--epg-green-secondary);
+    border-radius: var(--epg-border-radius-md);
+    padding: var(--epg-spacing-md);
+    color: var(--epg-green-dark);
+    font-weight: 500;
+}
+
+.epg-offset-active .offset-icon {
+    font-size: var(--epg-font-size-large);
+}
+
+/* ==========================================================================
+   Payment Gateway Cards
+   ========================================================================== */
+
+.epg-gateway-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--epg-spacing-lg);
+    margin: var(--epg-spacing-lg) 0;
+}
+
+.epg-gateway-card {
+    background: var(--epg-white);
+    border: 1px solid var(--epg-gray-medium);
+    border-radius: var(--epg-border-radius-lg);
+    padding: var(--epg-spacing-lg);
+    transition: all var(--epg-transition-normal);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.epg-gateway-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--epg-shadow-lg);
+    border-color: var(--epg-green-primary);
+}
+
+.epg-gateway-card.selected {
+    border-color: var(--epg-green-primary);
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.1);
+}
+
+.epg-gateway-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--epg-green-primary), var(--epg-green-secondary));
+    opacity: 0;
+    transition: opacity var(--epg-transition-normal);
+}
+
+.epg-gateway-card.selected::before,
+.epg-gateway-card:hover::before {
+    opacity: 1;
+}
+
+.epg-gateway-header {
+    display: flex;
+    align-items: center;
+    gap: var(--epg-spacing-md);
+    margin-bottom: var(--epg-spacing-md);
+}
+
+.epg-gateway-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--epg-border-radius-md);
+    object-fit: contain;
+}
+
+.epg-gateway-name {
+    flex: 1;
+}
+
+.epg-gateway-name h3 {
+    margin: 0 0 var(--epg-spacing-xs) 0;
+    font-size: var(--epg-font-size-large);
+}
+
+.epg-gateway-name .gateway-type {
+    color: var(--epg-gray-dark);
+    font-size: var(--epg-font-size-small);
+}
+
+.epg-gateway-features {
+    list-style: none;
+    padding: 0;
+    margin: var(--epg-spacing-md) 0;
+}
+
+.epg-gateway-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--epg-spacing-sm);
+    margin-bottom: var(--epg-spacing-xs);
+    color: var(--epg-gray-dark);
+    font-size: var(--epg-font-size-small);
+}
+
+.epg-gateway-features li::before {
+    content: '✓';
+    color: var(--epg-green-primary);
+    font-weight: bold;
+}
+
+.epg-gateway-environmental {
+    background: rgba(76, 175, 80, 0.05);
+    border-radius: var(--epg-border-radius-md);
+    padding: var(--epg-spacing-md);
+    margin-top: var(--epg-spacing-md);
+}
+
+/* ==========================================================================
+   Payment Total Display
+   ========================================================================== */
+
+.epg-payment-total {
+    background: var(--epg-white);
+    border: 1px solid var(--epg-gray-medium);
+    border-radius: var(--epg-border-radius-lg);
+    padding: var(--epg-spacing-lg);
+    margin: var(--epg-spacing-lg) 0;
+    box-shadow: var(--epg-shadow-sm);
+}
+
+.epg-total-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: var(--epg-spacing-md);
+}
+
+.epg-line-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--epg-spacing-sm) 0;
+}
+
+.epg-line-item.total {
+    border-top: 2px solid var(--epg-gray-medium);
+    padding-top: var(--epg-spacing-md);
+    font-size: var(--epg-font-size-large);
+}
+
+.epg-line-item.offset {
+    color: var(--epg-green-dark);
+    font-style: italic;
+}
+
+.epg-line-item.offset::before {
+    content: '🌱';
+    margin-right: var(--epg-spacing-xs);
+}
+
+/* ==========================================================================
+   Currency/Token Selection
+   ========================================================================== */
+
+.epg-currency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--epg-spacing-md);
+    margin: var(--epg-spacing-lg) 0;
+}
+
+.epg-currency-option {
+    background: var(--epg-white);
+    border: 2px solid var(--epg-gray-medium);
+    border-radius: var(--epg-border-radius-lg);
+    padding: var(--epg-spacing-lg);
+    transition: all var(--epg-transition-normal);
+    cursor: pointer;
+    position: relative;
+}
+
+.epg-currency-option:hover {
+    border-color: var(--epg-green-primary);
+    transform: translateY(-1px);
+    box-shadow: var(--epg-shadow-md);
+}
+
+.epg-currency-option.selected {
+    border-color: var(--epg-green-primary);
+    background: rgba(76, 175, 80, 0.02);
+}
+
+.epg-currency-option.selected::after {
+    content: '✓';
+    position: absolute;
+    top: var(--epg-spacing-md);
+    right: var(--epg-spacing-md);
+    width: 24px;
+    height: 24px;
+    background: var(--epg-green-primary);
+    color: var(--epg-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.epg-currency-header {
+    display: flex;
+    align-items: center;
+    gap: var(--epg-spacing-md);
+    margin-bottom: var(--epg-spacing-md);
+}
+
+.epg-currency-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.epg-currency-info h4 {
+    margin: 0 0 var(--epg-spacing-xs) 0;
+    font-size: var(--epg-font-size-base);
+}
+
+.epg-currency-symbol {
+    color: var(--epg-gray-dark);
+    font-size: var(--epg-font-size-small);
+    font-weight: 600;
+}
+
+.epg-environmental-info {
+    margin-top: var(--epg-spacing-md);
+    padding-top: var(--epg-spacing-md);
+    border-top: 1px solid var(--epg-gray-light);
+}
+
+.epg-carbon-footprint {
+    display: flex;
+    align-items: center;
+    gap: var(--epg-spacing-xs);
+    margin-top: var(--epg-spacing-sm);
+    font-size: var(--epg-font-size-small);
+    color: var(--epg-gray-dark);
+}
+
+/* ==========================================================================
+   Payment Interface
+   ========================================================================== */
+
+.epg-payment-interface {
+    background: var(--epg-white);
+    border: 1px solid var(--epg-gray-medium);
+    border-radius: var(--epg-border-radius-lg);
+    padding: var(--epg-spacing-xl);
+    margin: var(--epg-spacing-lg) 0;
+    box-shadow: var(--epg-shadow-md);
+}
+
+.epg-payment-header {
+    text-align: center;
+    margin-bottom: var(--epg-spacing-xl);
+    padding-bottom: var(--epg-spacing-lg);
+    border-bottom: 1px solid var(--epg-gray-light);
+}
+
+.epg-payment-header h3 {
+    font-size: var(--epg-font-size-xlarge);
+    color: var(--epg-black);
+    margin-bottom: var(--epg-spacing-sm);
+}
+
+.epg-payment-amount {
+    font-size: var(--epg-font-size-large);
+    font-weight: 600;
+    color: var(--epg-green-dark);
+}
+
+.epg-qr-code-container {
+    text-align: center;
+    padding: var(--epg-spacing-xl);
+    background: var(--epg-gray-light);
+    border-radius: var(--epg-border-radius-lg);
+    margin: var(--epg-spacing-lg) 0;
+}
+
+.epg-qr-code {
+    max-width: 200px;
+    height: auto;
+    border-radius: var(--epg-border-radius-md);
+    box-shadow: var(--epg-shadow-sm);
+}
+
+.epg-qr-instructions {
+    margin-top: var(--epg-spacing-md);
+    color: var(--epg-gray-dark);
+    font-size: var(--epg-font-size-small);
+}
+
+.epg-address-field,
+.epg-amount-field {
+    display: flex;
+    gap: var(--epg-spacing-sm);
+    margin-bottom: var(--epg-spacing-md);
+}
+
+.epg-address-field input,
+.epg-amount-field input {
+    flex: 1;
+    font-family: monospace;
+    font-size: var(--epg-font-size-small);
+}
+
+/* ==========================================================================
+   Payment Status
+   ========================================================================== */
+
+.epg-payment-status {
+    text-align: center;
+    padding: var(--epg-spacing-lg);
+    margin: var(--epg-spacing-lg) 0;
+}
+
+.epg-status-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--epg-spacing-md);
+    padding: var(--epg-spacing-lg);
+    border-radius: var(--epg-border-radius-lg);
+    margin-bottom: var(--epg-spacing-md);
+    font-weight: 500;
+}
+
+.epg-status-indicator.waiting {
+    background: rgba(255, 193, 7, 0.1);
+    color: #F57C00;
+}
+
+.epg-status-indicator.pending {
+    background: rgba(33, 150, 243, 0.1);
+    color: var(--epg-blue);
+}
+
+.epg-status-indicator.confirmed,
+.epg-status-indicator.completed {
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--epg-green-primary);
+}
+
+.epg-status-indicator.failed,
+.epg-status-indicator.expired {
+    background: rgba(244, 67, 54, 0.1);
+    color: var(--epg-red);
+}
+
+.epg-status-icon {
+    font-size: var(--epg-font-size-large);
+}
+
+.epg-payment-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--epg-spacing-sm);
+    color: var(--epg-gray-dark);
+    font-size: var(--epg-font-size-small);
+}
+
+.epg-timer-countdown {
+    font-weight: 600;
+    color: var(--epg-orange);
+}
+
+.epg-timer-countdown.urgent {
+    color: var(--epg-red);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.epg-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--epg-spacing-sm);
+    padding: var(--epg-spacing-md) var(--epg-spacing-lg);
+    border: none;
+    border-radius: var(--epg-border-radius-md);
+    font-family: inherit;
+    font-size: var(--epg-font-size-base);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--epg-transition-normal);
+    min-height: 44px;
+}
+
+.epg-button-primary {
+    background: linear-gradient(135deg, var(--epg-green-primary), var(--epg-green-secondary));
+    color: var(--epg-white);
+    box-shadow: var(--epg-shadow-sm);
+}
+
+.epg-button-primary:hover {
+    background: linear-gradient(135deg, var(--epg-green-dark), var(--epg-green-primary));
+    transform: translateY(-1px);
+    box-shadow: var(--epg-shadow-md);
+}
+
+.epg-button-primary:active {
+    transform: translateY(0);
+}
+
+.epg-button-secondary {
+    background: var(--epg-white);
+    color: var(--epg-green-primary);
+    border: 2px solid var(--epg-green-primary);
+}
+
+.epg-button-secondary:hover {
+    background: var(--epg-green-primary);
+    color: var(--epg-white);
+}
+
+.epg-button-danger {
+    background: var(--epg-red);
+    color: var(--epg-white);
+}
+
+.epg-button-danger:hover {
+    background: #D32F2F;
+}
+
+.epg-button-disabled,
+.epg-button:disabled {
+    background: var(--epg-gray-medium);
+    color: var(--epg-gray-dark);
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.epg-button-large {
+    padding: var(--epg-spacing-lg) var(--epg-spacing-xl);
+    font-size: var(--epg-font-size-large);
+    min-height: 56px;
+}
+
+.epg-button-small {
+    padding: var(--epg-spacing-sm) var(--epg-spacing-md);
+    font-size: var(--epg-font-size-small);
+    min-height: 36px;
+}
+
+.epg-button-full-width {
+    width: 100%;
+}
+
+/* ==========================================================================
+   Modals
+   ========================================================================== */
+
+.epg-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--epg-transition-normal);
+}
+
+.epg-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.epg-modal-content {
+    background: var(--epg-white);
+    border-radius: var(--epg-border-radius-lg);
+    box-shadow: var(--epg-shadow-xl);
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+    transform: scale(0.9);
+    transition: transform var(--epg-transition-normal);
+}
+
+.epg-modal.active .epg-modal-content {
+    transform: scale(1);
+}
+
+.epg-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--epg-spacing-lg);
+    border-bottom: 1px solid var(--epg-gray-light);
+}
+
+.epg-modal-close {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--epg-gray-light);
+    color: var(--epg-gray-dark);
+    font-size: var(--epg-font-size-large);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--epg-transition-fast);
+}
+
+.epg-modal-close:hover {
+    background: var(--epg-gray-medium);
+    color: var(--epg-black);
+}
+
+.epg-modal-body {
+    padding: var(--epg-spacing-lg);
+}
+
+/* ==========================================================================
+   Success & Error States
+   ========================================================================== */
+
+.epg-success {
+    background: rgba(76, 175, 80, 0.1);
+    border: 1px solid var(--epg-green-secondary);
+    border-radius: var(--epg-border-radius-lg);
+    padding: var(--epg-spacing-lg);
+    color: var(--epg-green-dark);
+    text-align: center;
+}
+
+.epg-success .success-icon {
+    font-size: 48px;
+    margin-bottom: var(--epg-spacing-md);
+}
+
+.epg-error {
+    background: rgba(244, 67, 54, 0.1);
+    border: 1px solid var(--epg-red);
+    border-radius: var(--epg-border-radius-lg);
+    padding: var(--epg-spacing-lg);
+    color: #C62828;
+    text-align: center;
+}
+
+.epg-error .error-icon {
+    font-size: 48px;
+    margin-bottom: var(--epg-spacing-md);
+}
+
+/* ==========================================================================
+   Loading States
+   ========================================================================== */
+
+.epg-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--epg-spacing-sm);
+    padding: var(--epg-spacing-lg);
+    color: var(--epg-gray-dark);
+}
+
+.epg-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--epg-gray-light);
+    border-top: 2px solid var(--epg-green-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.epg-loading-dots {
+    display: flex;
+    gap: var(--epg-spacing-xs);
+}
+
+.epg-loading-dots span {
+    width: 8px;
+    height: 8px;
+    background: var(--epg-green-primary);
+    border-radius: 50%;
+    animation: bounce 1.4s ease-in-out infinite both;
+}
+
+.epg-loading-dots span:nth-child(1) { animation-delay: -0.32s; }
+.epg-loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .epg-payment-gateway {
+        font-size: 14px;
+    }
+    
+    .epg-gateway-grid {
+        grid-template-columns: 1fr;
+        gap: var(--epg-spacing-md);
+    }
+    
+    .epg-currency-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .epg-payment-interface {
+        padding: var(--epg-spacing-lg);
+        margin: var(--epg-spacing-md) 0;
+    }
+    
+    .epg-modal-content {
+        max-width: 95vw;
+        margin: var(--epg-spacing-md);
+    }
+    
+    .epg-address-field,
+    .epg-amount-field {
+        flex-direction: column;
+    }
+    
+    .epg-line-item {
+        font-size: var(--epg-font-size-small);
+    }
+    
+    .epg-button {
+        min-height: 48px;
+        padding: var(--epg-spacing-md) var(--epg-spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .epg-payment-interface {
+        padding: var(--epg-spacing-md);
+    }
+    
+    .epg-qr-code {
+        max-width: 150px;
+    }
+    
+    .epg-gateway-card {
+        padding: var(--epg-spacing-md);
+    }
+    
+    .epg-currency-option {
+        padding: var(--epg-spacing-md);
+    }
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+
+.epg-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.epg-payment-gateway :focus {
+    outline: 2px solid var(--epg-green-primary);
+    outline-offset: 2px;
+}
+
+.epg-payment-gateway :focus:not(:focus-visible) {
+    outline: none;
+}
+
+.epg-payment-gateway :focus-visible {
+    outline: 2px solid var(--epg-green-primary);
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   High Contrast Mode
+   ========================================================================== */
+
+@media (prefers-contrast: high) {
+    .epg-payment-gateway {
+        --epg-green-primary: #1B5E20;
+        --epg-green-secondary: #2E7D32;
+        --epg-gray-medium: #9E9E9E;
+        --epg-gray-dark: #424242;
+    }
+    
+    .epg-gateway-card,
+    .epg-currency-option,
+    .epg-payment-interface {
+        border-width: 2px;
+    }
+}
+
+/* ==========================================================================
+   Reduced Motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .epg-gateway-card:hover,
+    .epg-currency-option:hover,
+    .epg-button:hover {
+        transform: none;
+    }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+    .epg-payment-gateway {
+        color: black;
+        background: white;
+    }
+    
+    .epg-modal,
+    .epg-button,
+    .epg-qr-code {
+        display: none;
+    }
+    
+    .epg-payment-interface {
+        border: 1px solid black;
+        box-shadow: none;
+    }
+}

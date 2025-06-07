@@ -1,0 +1,236 @@
+# Environmental Platform - Multi-language Support
+# Copyright (C) 2024 Environmental Platform Team
+# This file is distributed under the same license as the Environmental Platform - Multi-language Support package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Environmental Platform - Multi-language Support 1.0.0\n"
+"Report-Msgid-Bugs-To: https://environmentalplatform.com/support\n"
+"POT-Creation-Date: 2024-12-07 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: includes/class-admin-interface.php
+msgid "Multi-language Settings"
+msgstr ""
+
+msgid "Language Management"
+msgstr ""
+
+msgid "Translation Tools"
+msgstr ""
+
+msgid "Statistics"
+msgstr ""
+
+msgid "General Settings"
+msgstr ""
+
+msgid "SEO Settings"
+msgstr ""
+
+msgid "Translation API"
+msgstr ""
+
+msgid "Advanced Settings"
+msgstr ""
+
+msgid "Default Language"
+msgstr ""
+
+msgid "Select the default language for your site"
+msgstr ""
+
+msgid "Auto-detect Language"
+msgstr ""
+
+msgid "Automatically detect visitor's language based on browser settings"
+msgstr ""
+
+msgid "Language Switcher Position"
+msgstr ""
+
+msgid "Where to display the language switcher"
+msgstr ""
+
+msgid "Header"
+msgstr ""
+
+msgid "Footer"
+msgstr ""
+
+msgid "Both"
+msgstr ""
+
+msgid "Language Switcher Style"
+msgstr ""
+
+msgid "How to display the language switcher"
+msgstr ""
+
+msgid "Dropdown"
+msgstr ""
+
+msgid "List"
+msgstr ""
+
+msgid "Flags"
+msgstr ""
+
+#: includes/class-language-switcher.php
+msgid "Switch Language"
+msgstr ""
+
+msgid "Language Switcher"
+msgstr ""
+
+msgid "Display a language switcher widget"
+msgstr ""
+
+msgid "Title:"
+msgstr ""
+
+msgid "Display Style:"
+msgstr ""
+
+msgid "Show Flags:"
+msgstr ""
+
+msgid "Show Names:"
+msgstr ""
+
+#: includes/class-translation-manager.php
+msgid "Translations"
+msgstr ""
+
+msgid "Original Post"
+msgstr ""
+
+msgid "Select the original post to link translations"
+msgstr ""
+
+msgid "Add Translation"
+msgstr ""
+
+msgid "Edit Translation"
+msgstr ""
+
+msgid "Link Translations"
+msgstr ""
+
+msgid "Translation Status"
+msgstr ""
+
+msgid "Auto"
+msgstr ""
+
+msgid "Manual"
+msgstr ""
+
+msgid "Complete"
+msgstr ""
+
+msgid "Incomplete"
+msgstr ""
+
+#: includes/class-seo-optimizer.php
+msgid "Language SEO"
+msgstr ""
+
+msgid "Hreflang Tags"
+msgstr ""
+
+msgid "Generate hreflang tags for multilingual SEO"
+msgstr ""
+
+msgid "Language-specific Meta"
+msgstr ""
+
+msgid "Generate language-specific meta tags"
+msgstr ""
+
+#: includes/class-user-preferences.php
+msgid "Language Preference"
+msgstr ""
+
+msgid "Your preferred language"
+msgstr ""
+
+msgid "Auto-translate Content"
+msgstr ""
+
+msgid "Automatically translate content to your preferred language"
+msgstr ""
+
+#: environmental-multilang-support.php
+msgid "Environmental Multi-language Support: No critical dependencies missing. Plugin will work with basic WordPress i18n support."
+msgstr ""
+
+msgid "Environmental Multi-language Support requires WordPress 5.0 or higher."
+msgstr ""
+
+msgid "Environmental Multi-language Support requires PHP 7.4 or higher."
+msgstr ""
+
+#: includes/class-translation-api.php
+msgid "Translation API Settings"
+msgstr ""
+
+msgid "Translation Provider"
+msgstr ""
+
+msgid "Select your preferred translation service"
+msgstr ""
+
+msgid "Google Translate"
+msgstr ""
+
+msgid "Microsoft Translator"
+msgstr ""
+
+msgid "DeepL"
+msgstr ""
+
+msgid "LibreTranslate"
+msgstr ""
+
+msgid "API Key"
+msgstr ""
+
+msgid "Enter your translation service API key"
+msgstr ""
+
+msgid "Auto-translate New Content"
+msgstr ""
+
+msgid "Automatically translate new posts and pages"
+msgstr ""
+
+msgid "Translation Cache"
+msgstr ""
+
+msgid "Cache translations to improve performance"
+msgstr ""
+
+msgid "Translate"
+msgstr ""
+
+msgid "Translating..."
+msgstr ""
+
+msgid "Translation completed"
+msgstr ""
+
+msgid "Translation failed"
+msgstr ""
+
+msgid "No content to translate"
+msgstr ""
+
+msgid "Translation API error"
+msgstr ""

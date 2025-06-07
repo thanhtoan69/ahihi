@@ -208,6 +208,14 @@ class Environmental_Admin_Dashboard {
             'env-notifications',
             array($this, 'notifications_page')
         );
+          add_submenu_page(
+            'env-dashboard',
+            __('Admin Customizer', 'env-admin-dashboard'),
+            __('Customizer', 'env-admin-dashboard'),
+            'manage_options',
+            'environmental-admin-customizer',
+            array($this, 'admin_customizer_page')
+        );
         
         add_submenu_page(
             'env-dashboard',
@@ -670,9 +678,13 @@ class Environmental_Admin_Dashboard {
     public function reporting_page() {
         include ENV_ADMIN_DASHBOARD_PLUGIN_PATH . 'admin/reporting-dashboard.php';
     }
-    
-    public function notifications_page() {
+      public function notifications_page() {
         include ENV_ADMIN_DASHBOARD_PLUGIN_PATH . 'admin/notifications.php';
+    }
+    
+    public function admin_customizer_page() {
+        $customizer = Environmental_Admin_Customizer::get_instance();
+        $customizer->render_customizer_page();
     }
     
     public function settings_page() {

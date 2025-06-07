@@ -1,0 +1,431 @@
+/* Environmental Admin Customizer Styles */
+.env-admin-customizer .nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.env-admin-customizer .tab-content {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-top: none;
+}
+
+.env-admin-customizer .tab-content.active {
+    display: block;
+}
+
+/* Form Styling */
+.env-admin-customizer .form-table {
+    margin-top: 0;
+}
+
+.env-admin-customizer .form-table th {
+    width: 220px;
+    padding: 15px 10px 15px 0;
+}
+
+.env-admin-customizer .form-table td {
+    padding: 15px 10px;
+}
+
+/* Menu Customizer */
+.menu-customizer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menu-section {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.menu-section h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.sortable-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.sortable-list li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: move;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.sortable-list li:hover {
+    background: #f0f0f1;
+}
+
+.sortable-list li:last-child {
+    border-bottom: none;
+}
+
+.sortable-list li.ui-sortable-helper {
+    background: #e1f5fe;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-item-title {
+    font-weight: 500;
+    color: #333;
+}
+
+.menu-item-handle {
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect x="2" y="6" width="16" height="2"/><rect x="2" y="12" width="16" height="2"/></svg>') no-repeat center;
+    opacity: 0.6;
+    cursor: move;
+}
+
+.menu-item-handle:hover {
+    opacity: 1;
+}
+
+/* Hidden Menu Items */
+#hidden-menu-items {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+#hidden-menu-items label {
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+#hidden-menu-items label:last-child {
+    border-bottom: none;
+}
+
+#hidden-menu-items label:hover {
+    background: #f9f9f9;
+    padding-left: 5px;
+    transition: all 0.2s;
+}
+
+/* Logo Upload */
+.logo-upload-section {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.logo-upload-section:hover {
+    border-color: #0073aa;
+}
+
+.logo-preview {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.logo-preview img {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Color Picker */
+.wp-picker-container {
+    display: inline-block;
+}
+
+/* Code Editor */
+.code-editor {
+    font-family: Consolas, Monaco, monospace;
+    font-size: 13px;
+    line-height: 1.4;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #f9f9f9;
+}
+
+/* Role Customizations */
+.role-customizations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.role-customization {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.role-customization h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.role-customization label {
+    display: block;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Import/Export Section */
+.import-export-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.export-section,
+.import-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.export-section h3,
+.import-section h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.import-section input[type="file"] {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    width: 100%;
+}
+
+/* Submit Section */
+.submit-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.submit-section .button {
+    margin-right: 10px;
+}
+
+.submit-section .spinner {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Status Messages */
+.customizer-message {
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: none;
+}
+
+.customizer-message.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.customizer-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.customizer-message.info {
+    background: #cce7ff;
+    border: 1px solid #b8daff;
+    color: #004085;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-customizer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .import-export-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .role-customizations {
+        grid-template-columns: 1fr;
+    }
+    
+    .env-admin-customizer .form-table th {
+        width: auto;
+        display: block;
+        padding-bottom: 5px;
+    }
+    
+    .env-admin-customizer .form-table td {
+        display: block;
+        padding-top: 5px;
+    }
+}
+
+/* Theme Previews */
+.theme-preview {
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 10px 5px 0;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-preview:hover {
+    border-color: #0073aa;
+}
+
+.theme-preview.selected {
+    border-color: #0073aa;
+    box-shadow: 0 0 5px rgba(0, 115, 170, 0.5);
+}
+
+.theme-preview.environmental {
+    background: linear-gradient(135deg, #2E7D32 0%, #388E3C 100%);
+}
+
+.theme-preview.dark {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.theme-preview.default {
+    background: linear-gradient(135deg, #f0f0f1 0%, #fff 100%);
+}
+
+.theme-preview::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+}
+
+/* Color Scheme Previews */
+.color-scheme-preview {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: all 0.3s;
+}
+
+.color-scheme-preview:hover {
+    transform: scale(1.1);
+    border-color: #0073aa;
+}
+
+.color-scheme-preview.selected {
+    border-color: #0073aa;
+    box-shadow: 0 0 5px rgba(0, 115, 170, 0.5);
+}
+
+.color-scheme-preview.green {
+    background: #4CAF50;
+}
+
+.color-scheme-preview.blue {
+    background: #2196F3;
+}
+
+.color-scheme-preview.earth {
+    background: #8D6E63;
+}
+
+.color-scheme-preview.default {
+    background: #0073aa;
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading .spinner {
+    visibility: visible;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content.active {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Custom Scrollbar */
+.sortable-list::-webkit-scrollbar,
+#hidden-menu-items::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sortable-list::-webkit-scrollbar-track,
+#hidden-menu-items::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.sortable-list::-webkit-scrollbar-thumb,
+#hidden-menu-items::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.sortable-list::-webkit-scrollbar-thumb:hover,
+#hidden-menu-items::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

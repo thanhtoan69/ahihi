@@ -1,0 +1,402 @@
+/* Environmental Multi-language Support - Frontend Styles */
+
+/* Language Switcher */
+.ems-language-switcher {
+    position: relative;
+    display: inline-block;
+    font-family: inherit;
+}
+
+/* Dropdown Style */
+.ems-language-switcher.ems-style-dropdown {
+    position: relative;
+}
+
+.ems-language-switcher.ems-style-dropdown select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    background: #fff;
+    font-size: 14px;
+    color: #333;
+    min-width: 120px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23666" d="m0,1l2,2l2-2z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+.ems-language-switcher.ems-style-dropdown select:focus {
+    outline: none;
+    border-color: #00a32a;
+    box-shadow: 0 0 0 2px rgba(0, 163, 42, 0.1);
+}
+
+/* Flags Style */
+.ems-language-switcher.ems-style-flags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.ems-language-switcher.ems-style-flags a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    transition: all 0.3s ease;
+}
+
+.ems-language-switcher.ems-style-flags a:hover {
+    border-color: #00a32a;
+    box-shadow: 0 2px 4px rgba(0, 163, 42, 0.2);
+    transform: translateY(-1px);
+}
+
+.ems-language-switcher.ems-style-flags a.current {
+    border-color: #00a32a;
+    box-shadow: 0 0 0 2px rgba(0, 163, 42, 0.1);
+}
+
+.ems-language-switcher.ems-style-flags img {
+    width: 24px;
+    height: 18px;
+    display: block;
+}
+
+/* Buttons Style */
+.ems-language-switcher.ems-style-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.ems-language-switcher.ems-style-buttons a {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #f6f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ems-language-switcher.ems-style-buttons a:hover {
+    background: #00a32a;
+    border-color: #00a32a;
+    color: #fff;
+}
+
+.ems-language-switcher.ems-style-buttons a.current {
+    background: #00a32a;
+    border-color: #00a32a;
+    color: #fff;
+}
+
+.ems-language-switcher.ems-style-buttons img {
+    width: 16px;
+    height: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* Text Links Style */
+.ems-language-switcher.ems-style-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ems-language-switcher.ems-style-text a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.ems-language-switcher.ems-style-text a:hover {
+    color: #00a32a;
+    text-decoration: underline;
+}
+
+.ems-language-switcher.ems-style-text a.current {
+    color: #00a32a;
+    font-weight: bold;
+}
+
+.ems-language-switcher.ems-style-text .separator {
+    color: #ccc;
+    user-select: none;
+}
+
+/* Widget Styling */
+.widget .ems-language-switcher {
+    margin-bottom: 15px;
+}
+
+.widget .ems-language-switcher select {
+    width: 100%;
+}
+
+/* Menu Integration */
+.menu-item .ems-language-switcher {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.menu-item .ems-language-switcher.ems-style-flags,
+.menu-item .ems-language-switcher.ems-style-buttons {
+    gap: 4px;
+}
+
+.menu-item .ems-language-switcher.ems-style-text {
+    gap: 8px;
+}
+
+/* RTL Support */
+[dir="rtl"] .ems-language-switcher.ems-style-dropdown select {
+    background-position: left 10px center;
+    padding-left: 30px;
+    padding-right: 12px;
+}
+
+[dir="rtl"] .ems-language-switcher.ems-style-buttons img {
+    margin-left: 6px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .menu-item .ems-language-switcher {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* Loading State */
+.ems-language-switcher.ems-loading {
+    position: relative;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.ems-language-switcher.ems-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #00a32a;
+    border-radius: 50%;
+    animation: ems-spin 1s linear infinite;
+}
+
+@keyframes ems-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Translation Notice */
+.ems-translation-notice {
+    padding: 12px 16px;
+    margin: 20px 0;
+    background: #e7f3ff;
+    border: 1px solid #b8daff;
+    border-radius: 4px;
+    color: #004085;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.ems-translation-notice.ems-auto-translated {
+    background: #fff3cd;
+    border-color: #ffeaa7;
+    color: #856404;
+}
+
+.ems-translation-notice .ems-notice-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: currentColor;
+    mask-size: contain;
+}
+
+.ems-translation-notice .ems-notice-icon.translate {
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0014.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>');
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ems-language-switcher.ems-style-flags,
+    .ems-language-switcher.ems-style-buttons,
+    .ems-language-switcher.ems-style-text {
+        justify-content: center;
+    }
+    
+    .ems-language-switcher.ems-style-dropdown select {
+        min-width: 100px;
+        font-size: 13px;
+    }
+    
+    .menu-item .ems-language-switcher {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .ems-language-switcher.ems-style-flags img {
+        width: 20px;
+        height: 15px;
+    }
+    
+    .ems-language-switcher.ems-style-buttons {
+        gap: 4px;
+    }
+    
+    .ems-language-switcher.ems-style-buttons a {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .ems-language-switcher.ems-style-text {
+        gap: 8px;
+        font-size: 13px;
+    }
+}
+
+/* Theme Integration */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .ems-language-switcher {
+    direction: ltr; /* Keep language switcher LTR */
+}
+
+/* Print Styles */
+@media print {
+    .ems-language-switcher,
+    .ems-translation-notice {
+        display: none !important;
+    }
+}
+
+/* Accessibility */
+.ems-language-switcher a:focus,
+.ems-language-switcher select:focus {
+    outline: 2px solid #00a32a;
+    outline-offset: 2px;
+}
+
+.ems-language-switcher[aria-hidden="true"] {
+    display: none;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .ems-language-switcher.ems-style-dropdown select {
+        border-width: 2px;
+        border-color: #000;
+    }
+    
+    .ems-language-switcher.ems-style-flags a,
+    .ems-language-switcher.ems-style-buttons a {
+        border-width: 2px;
+        border-color: #000;
+    }
+    
+    .ems-language-switcher.ems-style-buttons a:hover,
+    .ems-language-switcher.ems-style-buttons a.current {
+        background: #000;
+        color: #fff;
+    }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .ems-language-switcher.ems-style-dropdown select {
+        background: #1a1a1a;
+        border-color: #444;
+        color: #fff;
+    }
+    
+    .ems-language-switcher.ems-style-flags a,
+    .ems-language-switcher.ems-style-buttons a {
+        border-color: #444;
+    }
+    
+    .ems-language-switcher.ems-style-buttons a {
+        background: #2a2a2a;
+        color: #fff;
+    }
+    
+    .ems-language-switcher.ems-style-text a {
+        color: #ccc;
+    }
+    
+    .ems-translation-notice {
+        background: #1a1a1a;
+        border-color: #444;
+        color: #ccc;
+    }
+    
+    .ems-translation-notice.ems-auto-translated {
+        background: #2a2a1a;
+        border-color: #554;
+        color: #ddc;
+    }
+}
+
+/* Animation for language switching */
+.ems-page-transition {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ems-page-transition.loaded {
+    opacity: 1;
+}
+
+/* Custom Properties for Theme Integration */
+:root {
+    --ems-primary-color: #00a32a;
+    --ems-secondary-color: #f6f7f7;
+    --ems-text-color: #333;
+    --ems-border-color: #ddd;
+    --ems-border-radius: 4px;
+    --ems-transition: all 0.3s ease;
+}
+
+/* Theme compatibility class */
+.ems-theme-integration .ems-language-switcher {
+    color: var(--ems-text-color);
+}
+
+.ems-theme-integration .ems-language-switcher.ems-style-dropdown select {
+    border-color: var(--ems-border-color);
+    border-radius: var(--ems-border-radius);
+}
+
+.ems-theme-integration .ems-language-switcher.ems-style-buttons a {
+    background: var(--ems-secondary-color);
+    border-color: var(--ems-border-color);
+    border-radius: var(--ems-border-radius);
+    transition: var(--ems-transition);
+}
+
+.ems-theme-integration .ems-language-switcher.ems-style-buttons a:hover,
+.ems-theme-integration .ems-language-switcher.ems-style-buttons a.current {
+    background: var(--ems-primary-color);
+}
