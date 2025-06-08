@@ -750,3 +750,8 @@ class Environmental_Platform_Petitions_REST_API {
         return hash_equals($expected_signature, $signature);
     }
 }
+
+// Create alias for backward compatibility
+if (!class_exists('EPP_REST_API')) {
+    class_alias('Environmental_Platform_Petitions_REST_API', 'EPP_REST_API');
+}

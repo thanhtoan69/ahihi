@@ -1268,3 +1268,8 @@ class Environmental_Platform_Petitions_Admin_Dashboard {
         exit;
     }
 }
+
+// Create alias for backward compatibility
+if (!class_exists('EPP_Admin_Dashboard')) {
+    class_alias('Environmental_Platform_Petitions_Admin_Dashboard', 'EPP_Admin_Dashboard');
+}

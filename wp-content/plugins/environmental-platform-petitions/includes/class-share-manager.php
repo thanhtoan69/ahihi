@@ -591,10 +591,14 @@ class Environmental_Platform_Petitions_Share_Manager {
         $petition_id = absint($_POST['petition_id']);
         $shares = $this->get_petition_shares($petition_id);
         $statistics = $this->get_share_statistics($petition_id);
-        
-        wp_send_json_success(array(
+          wp_send_json_success(array(
             'shares' => $shares,
             'statistics' => $statistics
         ));
     }
+}
+
+// Create alias for backward compatibility
+if (!class_exists('EPP_Share_Manager')) {
+    class_alias('Environmental_Platform_Petitions_Share_Manager', 'EPP_Share_Manager');
 }

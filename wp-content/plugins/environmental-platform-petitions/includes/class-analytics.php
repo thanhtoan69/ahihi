@@ -665,3 +665,8 @@ class Environmental_Platform_Petitions_Analytics {
         wp_send_json_success($data);
     }
 }
+
+// Create alias for backward compatibility
+if (!class_exists('EPP_Analytics')) {
+    class_alias('Environmental_Platform_Petitions_Analytics', 'EPP_Analytics');
+}

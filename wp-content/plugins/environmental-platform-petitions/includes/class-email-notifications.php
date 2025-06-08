@@ -606,3 +606,8 @@ class Environmental_Platform_Petitions_Email_Notifications {
         return $this->send_email($to, $template_type, $test_data);
     }
 }
+
+// Create alias for backward compatibility
+if (!class_exists('EPP_Email_Notifications')) {
+    class_alias('Environmental_Platform_Petitions_Email_Notifications', 'EPP_Email_Notifications');
+}
