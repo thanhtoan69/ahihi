@@ -433,3 +433,734 @@ Stack trace:
 #4 C:\xampp\htdocs\moitruong\activate-plugin.php(3): require_once('C:\\xampp\\htdocs...')
 #5 {main}
   thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[07-Jun-2025 17:22:01 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[07-Jun-2025 17:22:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\activate-plugin.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 02:48:18 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 02:48:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\export-db-final.php(17): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:10:19 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:10:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:10:22 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:10:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:10:34 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:10:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:10:34 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:10:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:10:34 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:10:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:10:42 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:10:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:10:50 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:10:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:10:54 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:10:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:15:10 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:15:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:15:23 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:15:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:18:54 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:18:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\check-plugins.php(8): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:19:01 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:19:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:20:04 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:20:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:21:25 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:21:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:21:37 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:21:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_mkdir_p() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:31
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(397): EnvironmentalAdvancedCache->__construct()
+#2 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 31
+[08-Jun-2025 07:22:42 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:22:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:22:44 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:22:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:24:46 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:24:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\comprehensive-frontend-test.php(9): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:24:54 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:24:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\check-plugins.php(8): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:25:07 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:25:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:25:12 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:25:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:25:42 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:25:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\activate-item-exchange.php(12): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:25:51 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:25:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\activate-ecr-plugin.php(7): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:25:55 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:25:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\activate-donation-system.php(8): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:25:59 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:25:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\activate-petition-plugin.php(9): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:26:02 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:26:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\eia-demo.php(7): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:26:14 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:26:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\live-chat-demo.php(8): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:26:36 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:26:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:27:08 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:27:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\final-verification-phase31.php(9): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:27:13 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:27:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:27:15 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:27:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:27:30 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:27:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:28:22 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:28:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:28:23 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:28:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:28:27 UTC] PHP Warning:  Constant WP_CACHE already defined in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 11
+[08-Jun-2025 07:28:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php:75
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(64): EnvironmentalAdvancedCache->generate_cache_key()
+#1 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(25): EnvironmentalAdvancedCache->init()
+#2 C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php(410): EnvironmentalAdvancedCache->__construct()
+#3 C:\xampp\htdocs\moitruong\wp-settings.php(99): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\advanced-cache.php on line 75
+[08-Jun-2025 07:33:59 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:34:43 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:35:36 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:35:37 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:36:09 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:36:54 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:37:23 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:37:28 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:37:30 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:37:31 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:37:59 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:38:55 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:39:01 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:39:17 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:39:20 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:39:22 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:39:50 UTC] PHP Fatal error:  Cannot declare class WP_Object_Cache, because the name is already in use in C:\xampp\htdocs\moitruong\wp-includes\class-wp-object-cache.php on line 25
+[08-Jun-2025 07:41:24 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:41:24 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:41:24 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:41:24 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:41:24 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:41:25 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:41:25 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:41:25 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:41:25 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:41:27 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:41:27 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:41:27 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:42:38 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:42:38 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:42:53 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:42:53 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:42:55 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:42:55 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:42:56 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:42:56 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:43:11 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:43:11 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:43:21 UTC] PHP Fatal error:  Uncaught Error: Class "EPP_Share_Manager" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#1 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#5 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php on line 135
+[08-Jun-2025 07:43:21 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:49:04 UTC] PHP Fatal error:  Uncaught Error: Class "Environmental_Platform_Petitions_Database" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php:68
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(135): Environmental_Platform_Petitions_Share_Manager->__construct()
+#1 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#3 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#6 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php on line 68
+[08-Jun-2025 07:49:04 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:54:25 UTC] PHP Fatal error:  Uncaught Error: Class "Environmental_Platform_Petitions_Database" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php:68
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(135): Environmental_Platform_Petitions_Share_Manager->__construct()
+#1 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#3 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#6 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php on line 68
+[08-Jun-2025 07:54:26 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 07:54:28 UTC] PHP Fatal error:  Uncaught Error: Class "Environmental_Platform_Petitions_Database" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php:68
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(135): Environmental_Platform_Petitions_Share_Manager->__construct()
+#1 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#3 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#6 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php on line 68
+[08-Jun-2025 07:54:28 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 08:01:55 UTC] PHP Fatal error:  Uncaught Error: Class "Environmental_Platform_Petitions_Database" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php:68
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(135): Environmental_Platform_Petitions_Share_Manager->__construct()
+#1 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#3 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#6 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php on line 68
+[08-Jun-2025 08:01:55 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 08:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Environmental_Platform_Petitions_Database" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php:68
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(135): Environmental_Platform_Petitions_Share_Manager->__construct()
+#1 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#3 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#6 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php on line 68
+[08-Jun-2025 08:02:34 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 08:10:26 UTC] PHP Fatal error:  Uncaught Error: Class "Environmental_Platform_Petitions_Database" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php:68
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(135): Environmental_Platform_Petitions_Share_Manager->__construct()
+#1 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#3 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#6 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php on line 68
+[08-Jun-2025 08:10:26 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
+[08-Jun-2025 08:10:27 UTC] PHP Fatal error:  Uncaught Error: Class "Environmental_Platform_Petitions_Database" not found in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php:68
+Stack trace:
+#0 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(135): Environmental_Platform_Petitions_Share_Manager->__construct()
+#1 C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\environmental-platform-petitions.php(109): Environmental_Platform_Petitions->init_components()
+#2 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(324): Environmental_Platform_Petitions->init('')
+#3 C:\xampp\htdocs\moitruong\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\moitruong\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\moitruong\wp-settings.php(578): do_action('plugins_loaded')
+#6 C:\xampp\htdocs\moitruong\wp-config.php(154): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\moitruong\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\moitruong\wp-admin\admin.php(35): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\moitruong\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\moitruong\wp-content\plugins\environmental-platform-petitions\includes\class-share-manager.php on line 68
+[08-Jun-2025 08:10:27 UTC] PHP Notice:  Function _load_textdomain_just_in_time được gọi <strong>không chính xác</strong>. Tải bản dịch cho miền <code>woocommerce</code> được kích hoạt quá sớm. Đây thường là dấu hiệu cho thấy một số mã trong plugin hoặc chủ đề chạy quá sớm. Bản dịch phải được tải tại hành động <code>init</code> hoặc sau đó. Vui lòng xem <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin. (Thông điệp này đã được thêm vào trong phiên bản 6.7.0.) in C:\xampp\htdocs\moitruong\wp-includes\functions.php on line 6121
